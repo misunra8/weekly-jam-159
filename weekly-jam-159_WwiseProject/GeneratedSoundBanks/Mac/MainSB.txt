@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1335746988	_test			\Default Work Unit\_test	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	568419574	LSCT_Cinematic_Hit_01	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\LSCT_Cinematic_Hit_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LSCT_Cinematic_Hit_01		881432
+	898063079	LSCT_Cinematic_Hit_02	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\LSCT_Cinematic_Hit_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\LSCT_Cinematic_Hit_02		1488088
+
