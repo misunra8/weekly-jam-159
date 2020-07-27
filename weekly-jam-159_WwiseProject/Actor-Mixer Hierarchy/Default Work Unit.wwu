@@ -798,10 +798,38 @@
 										</Sound>
 									</ChildrenList>
 								</RandomSequenceContainer>
-								<RandomSequenceContainer Name="CoinHandful" ID="{6E0D2B56-031F-433F-BA06-35B1F66C4419}" ShortID="612614357">
-									<PropertyList>
-										<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
-									</PropertyList>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="CashRegister" ID="{3394766B-6CBB-4A6F-BBD3-0145EF250599}" ShortID="534636536">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-5</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{08929510-45B2-49E6-91E5-7F7142E273A6}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="2"/>
+													<Property Name="Min" Type="Real64" Value="-4"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="chaching" ID="{100008DC-18A6-4F84-A50E-C468B0E62260}" ShortID="784665684">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
@@ -811,168 +839,47 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<Sound Name="coinHandful (1)" ID="{723E861D-97BE-421F-8CD1-BA91C0176EE5}" ShortID="82134354">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="coinHandful (1)" ID="{CE331EDA-69F2-4F07-8B0B-62718F77BD48}">
-													<Language>SFX</Language>
-													<AudioFile>coinHandful (1).wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="736482630"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="coinHandful (1)" ID="{CE331EDA-69F2-4F07-8B0B-62718F77BD48}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="coinHandful (2)" ID="{64AD5C34-E59C-45A9-BD53-70E9267145F9}" ShortID="1049322722">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="coinHandful (2)" ID="{D57CD542-BCEB-44EF-8A0E-4D8AF2BD71B3}">
-													<Language>SFX</Language>
-													<AudioFile>coinHandful (2).wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="798332121"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="coinHandful (2)" ID="{D57CD542-BCEB-44EF-8A0E-4D8AF2BD71B3}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="coinHandful (3)" ID="{FF6FF755-4A98-4304-AF3F-CFEAED6FFA05}" ShortID="559040088">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="coinHandful (3)" ID="{69599DB5-6EB2-417E-8FD2-C1DC2AA7E697}">
-													<Language>SFX</Language>
-													<AudioFile>coinHandful (3).wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="443336680"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="coinHandful (3)" ID="{69599DB5-6EB2-417E-8FD2-C1DC2AA7E697}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="coinHandful (4)" ID="{52C940C7-BA0F-42E3-8080-3A0CB1F04A90}" ShortID="109738137">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="coinHandful (4)" ID="{FE2905CE-CD75-420E-98B6-46CE2098369D}">
-													<Language>SFX</Language>
-													<AudioFile>coinHandful (4).wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="419789988"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="coinHandful (4)" ID="{FE2905CE-CD75-420E-98B6-46CE2098369D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="coinHandful (5)" ID="{F9786C22-143B-4988-9F1B-DBD42EB7DDE9}" ShortID="185161489">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="coinHandful (5)" ID="{5A6C1F73-AB3A-4636-A28C-8D135E9F5B7D}">
-													<Language>SFX</Language>
-													<AudioFile>coinHandful (5).wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="917353615"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="coinHandful (5)" ID="{5A6C1F73-AB3A-4636-A28C-8D135E9F5B7D}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="coinHandful (6)" ID="{8DA91FB9-0473-428C-94DE-7BF56A3B1EE0}" ShortID="760761552">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="coinHandful (6)" ID="{3F75C7AE-A385-4BB1-9090-8BD8F1721F37}">
-													<Language>SFX</Language>
-													<AudioFile>coinHandful (6).wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="344265510"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="coinHandful (6)" ID="{3F75C7AE-A385-4BB1-9090-8BD8F1721F37}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
-										<Sound Name="coinHandful (7)" ID="{6D50CE58-5CB7-4E6F-90F6-ACA25700C5C0}" ShortID="533486889">
-											<ReferenceList>
-												<Reference Name="Conversion">
-													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
-												</Reference>
-												<Reference Name="OutputBus">
-													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
-												</Reference>
-											</ReferenceList>
-											<ChildrenList>
-												<AudioFileSource Name="coinHandful (7)" ID="{E0FDBE27-2B32-47CC-8808-3CD6231DDFC7}">
-													<Language>SFX</Language>
-													<AudioFile>coinHandful (7).wav</AudioFile>
-													<MediaIDList>
-														<MediaID ID="243175832"/>
-													</MediaIDList>
-												</AudioFileSource>
-											</ChildrenList>
-											<ActiveSourceList>
-												<ActiveSource Name="coinHandful (7)" ID="{E0FDBE27-2B32-47CC-8808-3CD6231DDFC7}" Platform="Linked"/>
-											</ActiveSourceList>
-										</Sound>
+										<AudioFileSource Name="chaching" ID="{F98AD6F4-F4FD-450F-A3F8-847262897242}">
+											<Language>SFX</Language>
+											<AudioFile>chaching.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="65327589"/>
+											</MediaIDList>
+										</AudioFileSource>
 									</ChildrenList>
-								</RandomSequenceContainer>
+									<ActiveSourceList>
+										<ActiveSource Name="chaching" ID="{F98AD6F4-F4FD-450F-A3F8-847262897242}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="chaching (2)" ID="{94D80ECA-D03F-4299-AD60-93A6B65F7047}" ShortID="205008126">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="chaching (2)" ID="{D6C3E2B1-A3BE-4D56-A265-8B45B79E63CE}">
+											<Language>SFX</Language>
+											<AudioFile>chaching (2).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="150272906"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="chaching (2)" ID="{D6C3E2B1-A3BE-4D56-A265-8B45B79E63CE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
 							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
 					<Playlist>
 						<ItemRef Name="Zipper" ID="{DFD75AA5-4BA5-4197-8081-5216089630A4}"/>
 						<ItemRef Name="CoinPayVary" ID="{78974921-5DD5-4E8F-9239-4D900314BE95}"/>
+						<ItemRef Name="CashRegister" ID="{3394766B-6CBB-4A6F-BBD3-0145EF250599}"/>
 					</Playlist>
 				</RandomSequenceContainer>
 				<RandomSequenceContainer Name="CoinHand" ID="{CF4F410A-2150-4C9E-A043-2EB225338DF4}" ShortID="223883765">
@@ -1246,6 +1153,178 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="coinHand (12)" ID="{EE57FCF5-4824-4D97-9D6D-3854B5D5A846}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="CoinHandful" ID="{6E0D2B56-031F-433F-BA06-35B1F66C4419}" ShortID="612614357">
+					<PropertyList>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+							<ObjectRef Name="Attack_Remover" ID="{174E7B9A-A16F-4CA7-86D0-530212B5A6AA}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="coinHandful (1)" ID="{723E861D-97BE-421F-8CD1-BA91C0176EE5}" ShortID="82134354">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="coinHandful (1)" ID="{CE331EDA-69F2-4F07-8B0B-62718F77BD48}">
+									<Language>SFX</Language>
+									<AudioFile>coinHandful (1).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="736482630"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="coinHandful (1)" ID="{CE331EDA-69F2-4F07-8B0B-62718F77BD48}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="coinHandful (2)" ID="{64AD5C34-E59C-45A9-BD53-70E9267145F9}" ShortID="1049322722">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="coinHandful (2)" ID="{D57CD542-BCEB-44EF-8A0E-4D8AF2BD71B3}">
+									<Language>SFX</Language>
+									<AudioFile>coinHandful (2).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="798332121"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="coinHandful (2)" ID="{D57CD542-BCEB-44EF-8A0E-4D8AF2BD71B3}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="coinHandful (3)" ID="{FF6FF755-4A98-4304-AF3F-CFEAED6FFA05}" ShortID="559040088">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="coinHandful (3)" ID="{69599DB5-6EB2-417E-8FD2-C1DC2AA7E697}">
+									<Language>SFX</Language>
+									<AudioFile>coinHandful (3).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="443336680"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="coinHandful (3)" ID="{69599DB5-6EB2-417E-8FD2-C1DC2AA7E697}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="coinHandful (4)" ID="{52C940C7-BA0F-42E3-8080-3A0CB1F04A90}" ShortID="109738137">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="coinHandful (4)" ID="{FE2905CE-CD75-420E-98B6-46CE2098369D}">
+									<Language>SFX</Language>
+									<AudioFile>coinHandful (4).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="419789988"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="coinHandful (4)" ID="{FE2905CE-CD75-420E-98B6-46CE2098369D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="coinHandful (5)" ID="{F9786C22-143B-4988-9F1B-DBD42EB7DDE9}" ShortID="185161489">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="coinHandful (5)" ID="{5A6C1F73-AB3A-4636-A28C-8D135E9F5B7D}">
+									<Language>SFX</Language>
+									<AudioFile>coinHandful (5).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="917353615"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="coinHandful (5)" ID="{5A6C1F73-AB3A-4636-A28C-8D135E9F5B7D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="coinHandful (6)" ID="{8DA91FB9-0473-428C-94DE-7BF56A3B1EE0}" ShortID="760761552">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="coinHandful (6)" ID="{3F75C7AE-A385-4BB1-9090-8BD8F1721F37}">
+									<Language>SFX</Language>
+									<AudioFile>coinHandful (6).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="344265510"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="coinHandful (6)" ID="{3F75C7AE-A385-4BB1-9090-8BD8F1721F37}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="coinHandful (7)" ID="{6D50CE58-5CB7-4E6F-90F6-ACA25700C5C0}" ShortID="533486889">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="coinHandful (7)" ID="{E0FDBE27-2B32-47CC-8808-3CD6231DDFC7}">
+									<Language>SFX</Language>
+									<AudioFile>coinHandful (7).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="243175832"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="coinHandful (7)" ID="{E0FDBE27-2B32-47CC-8808-3CD6231DDFC7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
