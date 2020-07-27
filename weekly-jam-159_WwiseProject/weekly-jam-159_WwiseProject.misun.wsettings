@@ -3,8 +3,9 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{7E0845EC-C6F0-4905-9CDC-E9004583ADA7}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="S:\!!Samples\Cinematic Tools\Cinematic_Hits_&amp;_Whooshes\LSCT_Hits\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\misun\Desktop\Early Projects\Week159_Jam\jam sound assets\Sampled\"/>
 				<Property Name="Event Action List\{AAB7369C-AB26-46CB-AF15-D0A6DA63A886}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{E195BABE-5948-41C9-8902-9389787F1120}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>

@@ -3,19 +3,12 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{FD70B87B-105F-4382-A98F-7FAFDE2EDEBC}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="_test" ID="{AAB7369C-AB26-46CB-AF15-D0A6DA63A886}">
+				<Event Name="CoinPay" ID="{E195BABE-5948-41C9-8902-9389787F1120}">
 					<ChildrenList>
-						<Action Name="" ID="{7DCCCE53-C245-4D47-BFA5-94D36401419D}" ShortID="248821416">
+						<Action Name="" ID="{A1F63221-1A06-4EB1-AD5C-567FCD5A9AB4}" ShortID="694148501">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="LSCT_Cinematic_Hit_01" ID="{F1B82F50-ED18-4E27-BFA7-EF062942C665}" WorkUnitID="{638493B3-4342-4AA6-A351-A5A3D2BE5F90}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{050979DE-11EC-433C-B00C-908E3F63D44B}" ShortID="105395401">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="LSCT_Cinematic_Hit_02" ID="{BD6106F0-0784-4421-A915-A0F078824355}" WorkUnitID="{638493B3-4342-4AA6-A351-A5A3D2BE5F90}"/>
+									<ObjectRef Name="Coin_Pay" ID="{3EC4F97A-4D8A-4413-B4F0-B643201E797F}" WorkUnitID="{638493B3-4342-4AA6-A351-A5A3D2BE5F90}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

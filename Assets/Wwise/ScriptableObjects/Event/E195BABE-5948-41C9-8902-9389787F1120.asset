@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 65e07f4cb7558fb4eb35fa22b9e47209, type: 3}
-  m_Name: AAB7369C-AB26-46CB-AF15-D0A6DA63A886
+  m_Name: E195BABE-5948-41C9-8902-9389787F1120
   m_EditorClassIdentifier: 
-  objectName: _test
-  id: 1335746988
-  guid: AAB7369C-AB26-46CB-AF15-D0A6DA63A886
+  objectName: CoinPay
+  id: 1303789868
+  guid: E195BABE-5948-41C9-8902-9389787F1120

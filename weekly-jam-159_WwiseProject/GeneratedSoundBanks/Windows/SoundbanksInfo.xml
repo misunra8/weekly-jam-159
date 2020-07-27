@@ -16,15 +16,83 @@
 			<ShortName>MainSB</ShortName>
 			<Path>MainSB.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1335746988" Name="_test" ObjectPath="\Events\Default Work Unit\_test" DurationType="OneShot" DurationMin="8.435511" DurationMax="8.435511">
+				<Event Id="1303789868" Name="CoinPay" ObjectPath="\Events\Default Work Unit\CoinPay" DurationType="OneShot" DurationMin="0.381477" DurationMax="1.608013">
 					<IncludedMemoryFiles>
-						<File Id="568419574" Language="SFX">
-							<ShortName>LSCT_Cinematic_Hit_01.wav</ShortName>
-							<Path>SFX\LSCT_Cinematic_Hit_01_10C4C929.wem</Path>
+						<File Id="34831605" Language="SFX">
+							<ShortName>coinLong (3).wav</ShortName>
+							<Path>SFX\coinLong (3)_10C4C929.wem</Path>
 						</File>
-						<File Id="898063079" Language="SFX">
-							<ShortName>LSCT_Cinematic_Hit_02.wav</ShortName>
-							<Path>SFX\LSCT_Cinematic_Hit_02_10C4C929.wem</Path>
+						<File Id="56555761" Language="SFX">
+							<ShortName>coinLong (6).wav</ShortName>
+							<Path>SFX\coinLong (6)_10C4C929.wem</Path>
+						</File>
+						<File Id="111641699" Language="SFX">
+							<ShortName>coinLong (2).wav</ShortName>
+							<Path>SFX\coinLong (2)_10C4C929.wem</Path>
+						</File>
+						<File Id="188942863" Language="SFX">
+							<ShortName>zipperA (4).wav</ShortName>
+							<Path>SFX\zipperA (4)_10C4C929.wem</Path>
+						</File>
+						<File Id="243175832" Language="SFX">
+							<ShortName>coinHandful (7).wav</ShortName>
+							<Path>SFX\coinHandful (7)_10C4C929.wem</Path>
+						</File>
+						<File Id="344265510" Language="SFX">
+							<ShortName>coinHandful (6).wav</ShortName>
+							<Path>SFX\coinHandful (6)_10C4C929.wem</Path>
+						</File>
+						<File Id="353829220" Language="SFX">
+							<ShortName>coinLong (4).wav</ShortName>
+							<Path>SFX\coinLong (4)_10C4C929.wem</Path>
+						</File>
+						<File Id="366793873" Language="SFX">
+							<ShortName>coinLong (7).wav</ShortName>
+							<Path>SFX\coinLong (7)_10C4C929.wem</Path>
+						</File>
+						<File Id="419789988" Language="SFX">
+							<ShortName>coinHandful (4).wav</ShortName>
+							<Path>SFX\coinHandful (4)_10C4C929.wem</Path>
+						</File>
+						<File Id="443336680" Language="SFX">
+							<ShortName>coinHandful (3).wav</ShortName>
+							<Path>SFX\coinHandful (3)_10C4C929.wem</Path>
+						</File>
+						<File Id="540316767" Language="SFX">
+							<ShortName>coinLong (8).wav</ShortName>
+							<Path>SFX\coinLong (8)_10C4C929.wem</Path>
+						</File>
+						<File Id="575118842" Language="SFX">
+							<ShortName>zipperA (1).wav</ShortName>
+							<Path>SFX\zipperA (1)_10C4C929.wem</Path>
+						</File>
+						<File Id="736482630" Language="SFX">
+							<ShortName>coinHandful (1).wav</ShortName>
+							<Path>SFX\coinHandful (1)_10C4C929.wem</Path>
+						</File>
+						<File Id="765882545" Language="SFX">
+							<ShortName>coinLong (1).wav</ShortName>
+							<Path>SFX\coinLong (1)_10C4C929.wem</Path>
+						</File>
+						<File Id="798332121" Language="SFX">
+							<ShortName>coinHandful (2).wav</ShortName>
+							<Path>SFX\coinHandful (2)_10C4C929.wem</Path>
+						</File>
+						<File Id="833060530" Language="SFX">
+							<ShortName>zipperA (2).wav</ShortName>
+							<Path>SFX\zipperA (2)_10C4C929.wem</Path>
+						</File>
+						<File Id="880118003" Language="SFX">
+							<ShortName>coinLong (5).wav</ShortName>
+							<Path>SFX\coinLong (5)_10C4C929.wem</Path>
+						</File>
+						<File Id="917353615" Language="SFX">
+							<ShortName>coinHandful (5).wav</ShortName>
+							<Path>SFX\coinHandful (5)_10C4C929.wem</Path>
+						</File>
+						<File Id="970509562" Language="SFX">
+							<ShortName>zipperA (3).wav</ShortName>
+							<Path>SFX\zipperA (3)_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

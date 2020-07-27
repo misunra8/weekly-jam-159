@@ -121,6 +121,68 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &132376116 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2234736770469378735, guid: 47cc14dec02eb7d4186bed0bf27b16dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2234736770482023977}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &132376124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132376116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5af50a2066da2314eaa3a8b92aa6712d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  actionOnEventType: 0
+  curveInterpolation: 4
+  enableActionOnEvent: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3b2a712f996d90f42a7fe820e7cf98bd,
+      type: 2}
+  useCallbacks: 0
+  Callbacks: []
+  playingId: 0
+  soundEmitterObject: {fileID: 0}
+  transitionDuration: 0
+  eventIdInternal: 0
+  valueGuidInternal: 
+  m_callbackDataInternal: {fileID: 0}
+  MultiPositionType: 1
+  multiPositionTypeLabel: 0
+  LargeModePositions: []
+  multiPositionArray: []
+--- !u!114 &132376125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 132376116}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5641d91074605044adc8a296cdf89ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &310337465
 GameObject:
   m_ObjectHideFlags: 0
@@ -314,7 +376,7 @@ Transform:
   - {fileID: 1138673442}
   - {fileID: 1187024157}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1011541141
 GameObject:
@@ -345,7 +407,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1011541143
 SpriteRenderer:
@@ -1942,174 +2004,6 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!1 &2001915544
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2001915551}
-  - component: {fileID: 2001915550}
-  - component: {fileID: 2001915549}
-  - component: {fileID: 2001915548}
-  - component: {fileID: 2001915547}
-  - component: {fileID: 2001915546}
-  - component: {fileID: 2001915545}
-  m_Layer: 0
-  m_Name: Sound Cube
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!54 &2001915545
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001915544}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!114 &2001915546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001915544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5af50a2066da2314eaa3a8b92aa6712d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  triggerList: f7e1664c
-  useOtherObject: 0
-  actionOnEventType: 0
-  curveInterpolation: 4
-  enableActionOnEvent: 0
-  data:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 61d1c584949072443ac20ee87d76d41a,
-      type: 2}
-  useCallbacks: 0
-  Callbacks: []
-  playingId: 0
-  soundEmitterObject: {fileID: 0}
-  transitionDuration: 0
-  eventIdInternal: 0
-  valueGuidInternal: 
-  m_callbackDataInternal: {fileID: 0}
-  MultiPositionType: 1
-  multiPositionTypeLabel: 0
-  LargeModePositions: []
-  multiPositionArray: []
---- !u!114 &2001915547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001915544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d5641d91074605044adc8a296cdf89ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_listeners:
-    initialListenerList: []
-    useDefaultListeners: 1
-  isEnvironmentAware: 1
-  isStaticObject: 0
-  m_positionOffsetData:
-    KeepMe: 0
-    positionOffset: {x: 0, y: 0, z: 0}
-  m_posOffsetData: {fileID: 0}
-  listenerMask: 1
---- !u!65 &2001915548
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001915544}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &2001915549
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001915544}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 31321ba15b8f8eb4c954353edc038b1d, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &2001915550
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001915544}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &2001915551
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2001915544}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.17, y: 1.22, z: -3.9298131}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2234736770482023977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2155,7 +2049,7 @@ PrefabInstance:
     - target: {fileID: 2234736770469378723, guid: 47cc14dec02eb7d4186bed0bf27b16dd,
         type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2234736770469378723, guid: 47cc14dec02eb7d4186bed0bf27b16dd,
         type: 3}
@@ -2204,7 +2098,7 @@ PrefabInstance:
     - target: {fileID: 3143237959486917450, guid: 3e183759c2f42e6499b744fae39ee260,
         type: 3}
       propertyPath: data.dataString
-      value: UEsDBBQAAAgIAABwn+tu5k4sUQIAAPQEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzqVjE2hJb61JSA9JmJBOLr4IaYU1yJJHksPX8N+7kg123RPLvre7bz/kM5HaVcC8sUsr+bPhQH6MSLDJl1EHPsGBbo1eyxNcOR+S+yKQaOS8US8N+tMQ5kwJ3kr2U29VICforLUUxpYPfAuZcd6hW1DlACFrfIjW6DqPyAF/xvch5IjW5HuwTmjdJ6MLmgy0B9tRk6+zltpYgdowa80ULSvgQXYXMLnyJ7NI09hQywjimVFKulYN8ccqdvtGj6FXLil2Fss31QqQ28KHZP3QVyEc+LZxS48LaXFETU7yyzRzK6nbNao+qaohCvoWFTVJn//Dx2mEhTXl07VumoQavpBshxoZdb432L570UlP43D2VO3oRsFHAfrFLK2pNUfQ2zqE1g4mi+7vrbWsALbr/I3UgbOueuu5LqddTejhErs/ZEqWmzjJaeNYKxOnHZcPFvfyGwXH03BtCvQGFX8cvNNt/4Za4FFa5xFqu9RB3sbUNlDJIxph8qz2mbEaorfVXIGmyh9XmMUPNzjAelUHyCMNj6Wt3WLXNzAIie6OnyQDaGX2t125wuyfwRWvtVdS95MF5AXnlBmtmwtzAzTErWsrKIOu2W0t+b+nRabiLhU8TcT9dD5PBIypSOks2dyx6Wwj5ikj8fakxkapWjVK2/ng1nSXXOOdXT8io6WlVbx2bul+KU+l6c1camHWzALo1ybDTThYLIJvkj9wiRNag/dSx32Tc06UYTvg+S1RHjt9OHhL8y5LTir5aXzw5CSLX42cXMjlL1BLAwQUAAAICAAAcJ/rEjLG9W0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNVRUEovSizIKAaKGII4pZkpIHa0kkmasWFaiqFBmqWJhYVBWqpuYpphoqlBknGyiWlSmoVhslIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAcJ/rbuZOLFECAAD0BAAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAcJ/rEjLG9W0AAAB4AAAACQAkAAAAAAAAAAAAAACeAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAFYDAAAAAA==
+      value: UEsDBBQAAAgIAAAYIexu5k4sUQIAAPQEAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVE1z2jAQ/SuMzqVjE2hJb61JSA9JmJBOLr4IaYU1yJJHksPX8N+7kg123RPLvre7bz/kM5HaVcC8sUsr+bPhQH6MSLDJl1EHPsGBbo1eyxNcOR+S+yKQaOS8US8N+tMQ5kwJ3kr2U29VICforLUUxpYPfAuZcd6hW1DlACFrfIjW6DqPyAF/xvch5IjW5HuwTmjdJ6MLmgy0B9tRk6+zltpYgdowa80ULSvgQXYXMLnyJ7NI09hQywjimVFKulYN8ccqdvtGj6FXLil2Fss31QqQ28KHZP3QVyEc+LZxS48LaXFETU7yyzRzK6nbNao+qaohCvoWFTVJn//Dx2mEhTXl07VumoQavpBshxoZdb432L570UlP43D2VO3oRsFHAfrFLK2pNUfQ2zqE1g4mi+7vrbWsALbr/I3UgbOueuu5LqddTejhErs/ZEqWmzjJaeNYKxOnHZcPFvfyGwXH03BtCvQGFX8cvNNt/4Za4FFa5xFqu9RB3sbUNlDJIxph8qz2mbEaorfVXIGmyh9XmMUPNzjAelUHyCMNj6Wt3WLXNzAIie6OnyQDaGX2t125wuyfwRWvtVdS95MF5AXnlBmtmwtzAzTErWsrKIOu2W0t+b+nRabiLhU8TcT9dD5PBIypSOks2dyx6Wwj5ikj8fakxkapWjVK2/ng1nSXXOOdXT8io6WlVbx2bul+KU+l6c1camHWzALo1ybDTThYLIJvkj9wiRNag/dSx32Tc06UYTvg+S1RHjt9OHhL8y5LTir5aXzw5CSLX42cXMjlL1BLAwQUAAAICAAAGCHsEjLG9W0AAAB4AAAACQAkAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAatWKkstKs7Mz1OyUjDRM9IzNNVRUEovSizIKAaKGII4pZkpIHa0kkmasWFaiqFBmqWJhYVBWqpuYpphoqlBknGyiWlSmoVhslIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAGCHsbuZOLFECAAD0BAAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAGCHsEjLG9W0AAAB4AAAACQAkAAAAAAAAAAAAAACeAgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAFYDAAAAAA==
       objectReference: {fileID: 0}
     - target: {fileID: 3143237959486917451, guid: 3e183759c2f42e6499b744fae39ee260,
         type: 3}
