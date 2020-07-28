@@ -20,7 +20,12 @@ public class Customer : Person
     {
         behavior = GetComponent<Animator>();
     }
-    
+
+    private void OnMouseDown() {
+        AkSoundEngine.PostEvent("CoinPay",gameObject);
+        AkSoundEngine.SetRTPCValue("Theme_RTPC", 20);
+    }
+
     /// <summary>
     /// Sits at the table, influences the behavior machine
     /// </summary>

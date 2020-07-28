@@ -23,6 +23,7 @@ public abstract class Person : MonoBehaviour
     {
         switch (other.gameObject.name)
         {
+
             // colliding with something in the tables tilemap
             case "Tables":
                 CollideTable(other);
@@ -35,7 +36,8 @@ public abstract class Person : MonoBehaviour
     /// </summary>
     /// <param name="other">Unity's detected collision</param>
     private void CollideTable(Collision2D other)
-    {   
+    {
+        
         var tablesTilemap = other.gameObject.GetComponent<Tilemap>();
         var contact = other.GetContact(0); // first contact point
         
@@ -53,6 +55,7 @@ public abstract class Person : MonoBehaviour
 
         // Custom action on the collided tile
         ActOnTableCollision(cell);
+        AkSoundEngine.PostEvent("CoinPay", gameObject);
     }
 
     /// <summary>

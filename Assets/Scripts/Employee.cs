@@ -7,7 +7,9 @@ public class Employee : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        float themeRTPC = 90;
+        AkSoundEngine.SetRTPCValue("Theme_RTPC", themeRTPC);
+        AkSoundEngine.PostEvent("ThemePlay",gameObject);
     }
 
     // Update is called once per frame
@@ -15,4 +17,5 @@ public class Employee : MonoBehaviour
     {
         
     }
+
 }
