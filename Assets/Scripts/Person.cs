@@ -28,8 +28,26 @@ public abstract class Person : MonoBehaviour
             case "Tables":
                 CollideTable(other);
                 break;
+
+            case "Machines":
+                CollideMachine(other);
+                break;
         }
     }
+
+    private void CollideMachine(Collision2D other)
+    {
+        var cell = GetCollisionCell(other);
+
+        // custom action on the collided machine
+        ActOnMachineCollision(cell);
+    }
+
+    /// <summary>
+    /// Method of what to do when colliding with a machine
+    /// </summary>
+    /// <param name="cell"></param>
+    protected abstract void ActOnMachineCollision(Vector3Int cell);
 
     /// <summary>
     /// Triggers an interaction between the customer and the table
@@ -37,25 +55,35 @@ public abstract class Person : MonoBehaviour
     /// <param name="other">Unity's detected collision</param>
     private void CollideTable(Collision2D other)
     {
-        
+        Vector3Int cell = GetCollisionCell(other);
+
+        // Custom action on the collided table
+        ActOnTableCollision(cell);
+        AkSoundEngine.PostEvent("CoinPay", gameObject);
+    }
+
+    /// <summary>
+    /// Finds the cell coordinate of the collision on the collided tilemap
+    /// </summary>
+    /// <param name="other">Collision with a tilemap</param>
+    /// <returns></returns>
+    private Vector3Int GetCollisionCell(Collision2D other)
+    {
         var tablesTilemap = other.gameObject.GetComponent<Tilemap>();
         var contact = other.GetContact(0); // first contact point
-        
+
         // To get the tile, we need to get a world position inside a cell.
         // But the collision position is not inside the cell all the time.
         // So we'll lengthen the path taken by the customer by a step to get a
         // position inside the cell.
-        
+
         // Find the position that is slightly ahead of the customer
         // Use the opposite direction of the normal of the surface of collision 
         var oppositeNormal = contact.normal.normalized * -1;
 
         var simulatedPosition = oppositeNormal * CollisionStep + contact.point;
         var cell = tablesTilemap.WorldToCell(simulatedPosition);
-
-        // Custom action on the collided tile
-        ActOnTableCollision(cell);
-        AkSoundEngine.PostEvent("CoinPay", gameObject);
+        return cell;
     }
 
     /// <summary>

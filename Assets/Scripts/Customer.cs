@@ -34,4 +34,9 @@ public class Customer : Person
     {
         
     }
+
+    protected override void ActOnMachineCollision(Vector3Int cell)
+    {
+        
+    }
 }
