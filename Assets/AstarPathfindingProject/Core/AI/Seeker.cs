@@ -287,6 +287,7 @@ namespace Pathfinding {
 		/// See: OnPathComplete(Path,bool,bool)
 		/// </summary>
 		void OnPathComplete (Path path) {
+			
 			OnPathComplete(path, true, true);
 		}
 
@@ -299,8 +300,9 @@ namespace Pathfinding {
 				return;
 			}
 
-			if (this == null || p == null || p != path)
+			if (this == null || p == null || p != path) {
 				return;
+			}
 
 			if (!path.error && runModifiers) {
 				// This will send the path for post processing to modifiers attached to this Seeker

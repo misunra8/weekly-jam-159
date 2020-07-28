@@ -1,22 +1,32 @@
 Event	ID	Name			Wwise Object Path	Notes
 	1303789868	CoinPay			\Default Work Unit\CoinPay	
+	1419635814	ThemePlay			\Default Work Unit\ThemePlay	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	4095641762	Theme_RTPC			\Default Work Unit\Theme_RTPC	
 
 Effect plug-ins	ID	Name	Type				Notes
 	86245554	Attack_Remover	Wwise Compressor			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	23388992	theme_spic_bass	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\theme_spic_bass_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_spic_bass		6158028
 	34831605	coinLong (3)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\coinLong (3)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (3)		144744
 	56555761	coinLong (6)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\coinLong (6)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (6)		197648
 	65327589	chaching	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\chaching_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CashRegister\chaching		260696
+	70286258	theme_bassoon	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\theme_bassoon_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_bassoon		6158028
 	111641699	coinLong (2)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\coinLong (2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (2)		118312
 	150272906	chaching (2)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\chaching (2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CashRegister\chaching (2)		264820
 	188942863	zipperA (4)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\zipperA (4)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\Zipper\zipperA (4)		67812
+	206032748	theme_flutes	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\theme_flutes_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_flutes		6158028
 	353829220	coinLong (4)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\coinLong (4)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (4)		224100
 	366793873	coinLong (7)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\coinLong (7)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (7)		155304
 	540316767	coinLong (8)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\coinLong (8)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (8)		128860
 	575118842	zipperA (1)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\zipperA (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\Zipper\zipperA (1)		91388
+	607650258	theme_keys	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\theme_keys_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_keys		6158028
+	630560050	theme_pizz_high	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\theme_pizz_high_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_pizz_high		6158028
 	765882545	coinLong (1)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\coinLong (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (1)		229416
 	833060530	zipperA (2)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\zipperA (2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\Zipper\zipperA (2)		88672
 	880118003	coinLong (5)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\coinLong (5)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (5)		197664
+	937805081	theme_cor_ang	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\theme_cor_ang_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_cor_ang		6158028
 	970509562	zipperA (3)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\zipperA (3)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\Zipper\zipperA (3)		89292
 

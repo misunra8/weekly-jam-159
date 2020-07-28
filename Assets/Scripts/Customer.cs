@@ -19,13 +19,24 @@ public class Customer : MonoBehaviour
     /// For testing purposes
     /// </summary>
     public TileBase CashRegister;
-    
+
+    float themeRTPC = 80;
+
     /// <summary>
     /// Standard Unity collision listener method
     /// </summary>
     /// <param name="other"></param>
+    /// 
+
+    private void Start() {
+        AkSoundEngine.PostEvent("ThemePlay", gameObject);
+        AkSoundEngine.SetRTPCValue("Theme_RTPC", themeRTPC);
+    }
     private void OnCollisionEnter2D(Collision2D other)
     {
+   
+        
+
         switch (other.gameObject.name)
         {
             // colliding with something in the tables tilemap
@@ -40,7 +51,8 @@ public class Customer : MonoBehaviour
     /// </summary>
     /// <param name="other">Unity's detected collision</param>
     private void CollideTable(Collision2D other)
-    {   
+    {
+        
         var tablesTilemap = other.gameObject.GetComponent<Tilemap>();
         var contact = other.GetContact(0); // first contact point
         
@@ -56,7 +68,11 @@ public class Customer : MonoBehaviour
         var simulatedPosition = oppositeNormal * CollisionStep + contact.point;
         var cell = tablesTilemap.WorldToCell(simulatedPosition);
 
+
         // Change the touched tile to another tile
         tablesTilemap.SetTile(cell, CashRegister);
+        float themeRTPC = 40;
+        AkSoundEngine.SetRTPCValue("Theme_RTPC", themeRTPC);
+        AkSoundEngine.PostEvent("CoinPay", gameObject);
     }
 }

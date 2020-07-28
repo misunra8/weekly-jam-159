@@ -6,6 +6,7 @@
 				<SoundBank Name="MainSB" ID="{2EABA382-28EB-40FB-8051-5F2B9DB3A065}">
 					<ObjectInclusionList>
 						<ObjectRef Name="CoinPay" ID="{E195BABE-5948-41C9-8902-9389787F1120}" WorkUnitID="{FD70B87B-105F-4382-A98F-7FAFDE2EDEBC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ThemePlay" ID="{8C7A15F1-A66B-4B1B-8BE5-F70D980118A6}" WorkUnitID="{FD70B87B-105F-4382-A98F-7FAFDE2EDEBC}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

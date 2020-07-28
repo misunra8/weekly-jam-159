@@ -76,7 +76,38 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1419635814" Name="ThemePlay" ObjectPath="\Events\Default Work Unit\ThemePlay" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="23388992" Language="SFX">
+							<ShortName>theme_spic_bass.wav</ShortName>
+							<Path>SFX\theme_spic_bass_D79FB2B7.wem</Path>
+						</File>
+						<File Id="70286258" Language="SFX">
+							<ShortName>theme_bassoon.wav</ShortName>
+							<Path>SFX\theme_bassoon_D79FB2B7.wem</Path>
+						</File>
+						<File Id="206032748" Language="SFX">
+							<ShortName>theme_flutes.wav</ShortName>
+							<Path>SFX\theme_flutes_D79FB2B7.wem</Path>
+						</File>
+						<File Id="607650258" Language="SFX">
+							<ShortName>theme_keys.wav</ShortName>
+							<Path>SFX\theme_keys_D79FB2B7.wem</Path>
+						</File>
+						<File Id="630560050" Language="SFX">
+							<ShortName>theme_pizz_high.wav</ShortName>
+							<Path>SFX\theme_pizz_high_D79FB2B7.wem</Path>
+						</File>
+						<File Id="937805081" Language="SFX">
+							<ShortName>theme_cor_ang.wav</ShortName>
+							<Path>SFX\theme_cor_ang_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="4095641762" Name="Theme_RTPC" ObjectPath="\Game Parameters\Default Work Unit\Theme_RTPC"/>
+			</GameParameters>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX">
 			<ObjectPath>Init</ObjectPath>

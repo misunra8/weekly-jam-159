@@ -14,7 +14,13 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID COINPAY = 1303789868U;
+        static const AkUniqueID THEMEPLAY = 1419635814U;
     } // namespace EVENTS
+
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID THEME_RTPC = 4095641762U;
+    } // namespace GAME_PARAMETERS
 
     namespace BANKS
     {

@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{10A474B3-106A-476C-8C66-87DD56FAA445}" SchemaVersion="97">
 	<GameParameters>
-		<WorkUnit Name="Default Work Unit" ID="{10A474B3-106A-476C-8C66-87DD56FAA445}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{10A474B3-106A-476C-8C66-87DD56FAA445}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Theme_RTPC" ID="{586F2A29-1028-4BA5-8EDF-ECE18635E8D2}"/>
+			</ChildrenList>
+		</WorkUnit>
 	</GameParameters>
 </WwiseDocument>
