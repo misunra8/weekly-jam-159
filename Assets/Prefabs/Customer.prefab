@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 2234736770469378725}
   - component: {fileID: 2234736770469378722}
   - component: {fileID: 7017488755532364726}
+  - component: {fileID: 8012001839694433962}
   m_Layer: 9
   m_Name: Customer
   m_TagString: Untagged
@@ -245,3 +246,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e99c41c425c77c4b86ce1d429dee571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollisionStep: 0.5
+--- !u!95 &8012001839694433962
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2234736770469378735}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: be72d825c3b29464787f7376ed02afd0, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

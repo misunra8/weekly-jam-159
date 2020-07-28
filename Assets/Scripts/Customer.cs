@@ -9,6 +9,19 @@ public class Customer : Person
 {
     
     /// <summary>
+    /// Reference to the customer behavior state machine
+    /// </summary>
+    private Animator behavior;
+    
+    /// <summary>
+    /// Assigns references
+    /// </summary>
+    private void Start()
+    {
+        behavior = GetComponent<Animator>();
+    }
+    
+    /// <summary>
     /// Sits at the table, influences the behavior machine
     /// </summary>
     /// <param name="cell"></param>
