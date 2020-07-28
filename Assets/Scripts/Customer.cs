@@ -49,7 +49,7 @@ public class Customer : MonoBehaviour
         // So we'll lengthen the path taken by the customer by a step to get a
         // position inside the cell.
         
-        // Find the position that is slightly ahead in the customer
+        // Find the position that is slightly ahead of the customer
         // Use the opposite direction of the normal of the surface of collision 
         var oppositeNormal = contact.normal.normalized * -1;
 
