@@ -1,35 +1,26 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 /// <summary>
-/// Script dictating how a customer interacts
+/// Script controlling how a person interacts with the environment
 /// </summary>
-public class Customer : Person
+public abstract class Person : MonoBehaviour
 {
+    /// <summary>
+    /// Used in finding the tile that the customer collides with
+    /// </summary>
+    [Tooltip("Used to find which tile is colliding with, usually the value is 1/2 the size of a tile")]
+    public float CollisionStep = 0.5f;
     
     /// <summary>
-    /// Reference to the customer behavior state machine
-    /// </summary>
-    public TileBase CashRegister;
-
-    float themeRTPC = 80;
-
-    /// <summary>
-    /// Assigns references
+    /// Standard Unity collision listener method
     /// </summary>
     /// <param name="other"></param>
-    /// 
-
-    private void Start() {
-        AkSoundEngine.PostEvent("ThemePlay", gameObject);
-        AkSoundEngine.SetRTPCValue("Theme_RTPC", themeRTPC);
-    }
     private void OnCollisionEnter2D(Collision2D other)
     {
-   
-        
-
         switch (other.gameObject.name)
         {
             // colliding with something in the tables tilemap
@@ -38,14 +29,13 @@ public class Customer : Person
                 break;
         }
     }
-    
+
     /// <summary>
-    /// Sits at the table, influences the behavior machine
+    /// Triggers an interaction between the customer and the table
     /// </summary>
     /// <param name="other">Unity's detected collision</param>
     private void CollideTable(Collision2D other)
-    {
-        
+    {   
         var tablesTilemap = other.gameObject.GetComponent<Tilemap>();
         var contact = other.GetContact(0); // first contact point
         
@@ -54,18 +44,20 @@ public class Customer : Person
         // So we'll lengthen the path taken by the customer by a step to get a
         // position inside the cell.
         
-        // Find the position that is slightly ahead in the customer
+        // Find the position that is slightly ahead of the customer
         // Use the opposite direction of the normal of the surface of collision 
         var oppositeNormal = contact.normal.normalized * -1;
 
         var simulatedPosition = oppositeNormal * CollisionStep + contact.point;
         var cell = tablesTilemap.WorldToCell(simulatedPosition);
 
-
-        // Change the touched tile to another tile
-        tablesTilemap.SetTile(cell, CashRegister);
-        float themeRTPC = 40;
-        AkSoundEngine.SetRTPCValue("Theme_RTPC", themeRTPC);
-        AkSoundEngine.PostEvent("CoinPay", gameObject);
+        // Custom action on the collided tile
+        ActOnTableCollision(cell);
     }
+
+    /// <summary>
+    /// Method of what to do to the collided table
+    /// </summary>
+    /// <param name="cell">Position of the table in tilemap cell coords</param>
+    protected abstract void ActOnTableCollision(Vector3Int cell);
 }

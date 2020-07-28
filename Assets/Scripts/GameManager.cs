@@ -16,6 +16,9 @@ public class GameManager : MonoBehaviour
         LeftClickListener();
     }
 
+    /// <summary>
+    /// Listens to the left mouse click being lifted
+    /// </summary>
     private void LeftClickListener()
     {
         // left click up
@@ -27,19 +30,29 @@ public class GameManager : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
             if (hit.collider != null)
             {
-                switch (hit.collider.gameObject.name)
-                {
-                    case "Customer":
-                    case "Employee":
-                        
-                        hit.collider.GetComponentInChildren<SpriteRenderer>().material = SelectedMaterial;
-                        
-                        break;
-
-                    case "Tables":
-                        break;
-                }
+                LeftClickCollision(hit);
             }
+        }
+    }
+
+    /// <summary>
+    /// Decides what to do when an object is clicked
+    /// </summary>
+    /// <param name="hit"></param>
+    private void LeftClickCollision(RaycastHit2D hit)
+    {
+        switch (hit.collider.gameObject.name)
+        {
+            case "Customer":
+            case "Employee":
+
+                // change to the color of selection
+                hit.collider.GetComponentInChildren<SpriteRenderer>().material = SelectedMaterial;
+
+                break;
+
+            case "Tables":
+                break;
         }
     }
 }
