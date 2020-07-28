@@ -245,3 +245,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64aaac4f76aa6654ba762e8ff526485a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollisionStep: 0.5
+  CashRegister: {fileID: 11400000, guid: 730884be1ceb49641a3e36444b1fd0c9, type: 2}
