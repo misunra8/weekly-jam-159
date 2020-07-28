@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2234736770469378734}
   - component: {fileID: 2234736770469378725}
   - component: {fileID: 2234736770469378722}
-  - component: {fileID: 7014733825777888851}
+  - component: {fileID: 7017488755532364726}
   m_Layer: 9
   m_Name: Customer
   m_TagString: Untagged
@@ -233,7 +233,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.25
---- !u!114 &7014733825777888851
+--- !u!114 &7017488755532364726
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -242,8 +242,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2234736770469378735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 64aaac4f76aa6654ba762e8ff526485a, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e99c41c425c77c4b86ce1d429dee571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CollisionStep: 0.5
-  CashRegister: {fileID: 11400000, guid: 730884be1ceb49641a3e36444b1fd0c9, type: 2}
