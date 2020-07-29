@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
@@ -26,6 +27,9 @@ public class WaitingArea : MonoBehaviour
     /// </summary>
     private int occupancyCount = 0;
 
+    [Tooltip("When the line is full, wait this many seconds before trying to get more customers")]
+    public float OverflowLineDelay = 1f;
+
     private void Start()
     {
         tilemap = GetComponent<Tilemap>();
@@ -34,17 +38,28 @@ public class WaitingArea : MonoBehaviour
         foreach (var item in tilemap.cellBounds.allPositionsWithin)
         {
             waitingSpots.Enqueue(item);
-           
+            //Debug.Log(item);
         }
 
     }
 
+    /// <summary>
+    /// Coroutine to run every so often when the line is full.
+    /// When the line has empty space again, control is given back to
+    /// the customer spawner.
+    /// </summary>
+    /// <returns></returns>
+    public IEnumerator OverflowLine()
+    {
+        while (IsLineFull())
+            yield return new WaitForSeconds(OverflowLineDelay);
+    }
+
 
     /// <summary>
-    /// Gives a free waiting spot location
+    /// Gives a free waiting spot location, throws exception
     /// </summary>
-    /// <param name="customer">Customer game object</param>
-    public Vector3 WaitInLine(GameObject customer)
+    public Vector3 WaitInLine()
     {
         // deny entry if no waiting spots are available
         if (occupancyCount == waitingSpots.Count)
@@ -53,11 +68,11 @@ public class WaitingArea : MonoBehaviour
         var position = waitingSpots.Dequeue();
         occupancyCount++;
 
-        return tilemap.CellToWorld(position);
+        return tilemap.GetCellCenterWorld(position);
     }
 
     /// <summary>
-    /// Free up a spot in the line
+    /// Free up a spot in the line, throws exception
     /// </summary>
     /// <param name="customer">Customer to leave the line</param>
     public void LeaveLine(GameObject customer)
@@ -70,4 +85,10 @@ public class WaitingArea : MonoBehaviour
         var position = tilemap.WorldToCell(customer.transform.position);
         waitingSpots.Enqueue(position);
     }
+
+    /// <summary>
+    /// Whether the line is full
+    /// </summary>
+    /// <returns></returns>
+    public bool IsLineFull() => occupancyCount == waitingSpots.Count;
 }

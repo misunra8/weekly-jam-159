@@ -1,25 +1,14 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Pathfinding;
 
 /// <summary>
 /// Script dictating how a customer interacts
 /// </summary>
 public class Customer : Person
 {
-    
-    /// <summary>
-    /// Reference to the customer behavior state machine
-    /// </summary>
-    private Animator behavior;
-    
-    /// <summary>
-    /// Assigns references
-    /// </summary>
-    private void Start()
-    {
-        behavior = GetComponent<Animator>();
-    }
 
     private void OnMouseDown() {
         AkSoundEngine.PostEvent("CoinPay",gameObject);
@@ -38,5 +27,20 @@ public class Customer : Person
     protected override void ActOnMachineCollision(Vector3Int cell)
     {
         
+    }
+
+    /// <summary>
+    /// The customer will move to the target waiting spot
+    /// </summary>
+    /// <param name="waitingSpot">Location of a free spot to wait</param>
+    public void WaitInLine(Vector3 waitingSpot)
+    {
+        SetPathDestination(waitingSpot);
+    }
+
+    protected override void SetPathDestination(Vector3 destination)
+    {
+        pairedEmpty.transform.position = destination;
+        pathSetter.target = pairedEmpty.transform;
     }
 }

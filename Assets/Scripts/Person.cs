@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Pathfinding;
 
 /// <summary>
 /// Script controlling how a person interacts with the environment
@@ -14,6 +15,29 @@ public abstract class Person : MonoBehaviour
     /// </summary>
     [Tooltip("Used to find which tile is colliding with, usually the value is 1/2 the size of a tile")]
     public float CollisionStep = 0.5f;
+
+    /// <summary>
+    /// Whether this person is selected or not
+    /// </summary>
+    protected bool isSelected;
+
+    /// <summary>
+    /// Ai path setter
+    /// </summary>
+    [SerializeField]
+    protected AIDestinationSetter pathSetter;
+
+    /// <summary>
+    /// Reference to the behavioral state machine
+    /// </summary>
+    public Animator behavior;
+
+    /// <summary>
+    /// Paired empty object for path finding.
+    /// Destroyed when customer is destroyed.
+    /// </summary>
+    protected GameObject pairedEmpty;
+
     
     /// <summary>
     /// Standard Unity collision listener method
@@ -63,6 +87,12 @@ public abstract class Person : MonoBehaviour
     }
 
     /// <summary>
+    /// Method of what to do to the collided table
+    /// </summary>
+    /// <param name="cell">Position of the table in tilemap cell coords</param>
+    protected abstract void ActOnTableCollision(Vector3Int cell);
+
+    /// <summary>
     /// Finds the cell coordinate of the collision on the collided tilemap
     /// </summary>
     /// <param name="other">Collision with a tilemap</param>
@@ -87,8 +117,28 @@ public abstract class Person : MonoBehaviour
     }
 
     /// <summary>
-    /// Method of what to do to the collided table
+    /// Link an empty object to be this person's AI path destination,
+    /// must not be a child object of the person
     /// </summary>
-    /// <param name="cell">Position of the table in tilemap cell coords</param>
-    protected abstract void ActOnTableCollision(Vector3Int cell);
+    /// <param name="empty"></param>
+    public void PairEmpty(GameObject empty) {
+        pairedEmpty = empty;
+    }
+
+    /// <summary>
+    /// Sets the destination of the pathfinding algorithm
+    /// </summary>
+    /// <param name="destination"></param>
+    protected abstract void SetPathDestination(Vector3 destination);
+
+    /// <summary>
+    /// Get current destination of the A* algorithm
+    /// </summary>
+    /// <returns></returns>
+    public Vector3 GetPathDestination() => this.pairedEmpty.transform.position;
+
+    private void OnDestroy()
+    {
+        Destroy(pairedEmpty);
+    }
 }
