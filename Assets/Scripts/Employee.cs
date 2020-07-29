@@ -33,7 +33,7 @@ public class Employee : Person
         throw new System.NotImplementedException();
     }
 
-    public override void OnClick(Material selectedMaterial)
+    public override Person OnClick(Material selectedMaterial)
     {
         throw new System.NotImplementedException();
     }

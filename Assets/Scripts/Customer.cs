@@ -42,9 +42,11 @@ public class Customer : Person
     /// Cursor clicked the customer
     /// </summary>
     /// <param name="selectedMaterial">Selection material</param>
-    public override void OnClick(Material selectedMaterial)
+    public override Person OnClick(Material selectedMaterial)
     {
         Debug.Log("clicked this");
         GetComponentInChildren<SpriteRenderer>().material = selectedMaterial;
+
+        return this;
     }
 }

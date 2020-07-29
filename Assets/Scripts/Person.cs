@@ -17,11 +17,6 @@ public abstract class Person : MonoBehaviour
     public float CollisionStep = 0.5f;
 
     /// <summary>
-    /// Whether this person is selected or not
-    /// </summary>
-    protected bool isSelected;
-
-    /// <summary>
     /// Ai path setter
     /// </summary>
     [SerializeField]
@@ -152,5 +147,7 @@ public abstract class Person : MonoBehaviour
     /// <summary>
     /// When the person is clicked on
     /// </summary>
-    public abstract void OnClick(Material selectedMaterial);
+    /// <param name="selectedMaterial">Selection material</param>
+    /// <returns>Reference to the selected person</returns>
+    public abstract Person OnClick(Material selectedMaterial);
 }

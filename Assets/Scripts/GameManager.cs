@@ -10,6 +10,11 @@ public class GameManager : MonoBehaviour
     [Tooltip("Material of a selected person")]
     public Material SelectedMaterial;
 
+    /// <summary>
+    /// The selected person
+    /// </summary>
+    private Person selectedUnit;
+
     // Update is called once per frame
     void Update()
     {
@@ -21,7 +26,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     private void LeftClickListener()
     {
-        // left click up
+        // left click up 
         if (Input.GetMouseButtonDown(0))
         {
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -46,14 +51,14 @@ public class GameManager : MonoBehaviour
         {
             case "Customer":
             case "Customer(Clone)":
-                hit.collider.GetComponent<Customer>().OnClick(SelectedMaterial);
+                selectedUnit = hit.collider.GetComponent<Customer>().OnClick(SelectedMaterial);
                 break;
 
             case "Employee":
             case "Employee(Clone)":
 
                 // change to the color of selection
-                hit.collider.GetComponent<Employee>().OnClick(SelectedMaterial);
+                selectedUnit = hit.collider.GetComponent<Employee>().OnClick(SelectedMaterial);
 
                 break;
 
