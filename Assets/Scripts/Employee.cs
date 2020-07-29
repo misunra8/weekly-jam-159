@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Employee : Person
 {
+
+    private uint walkEvent;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +43,8 @@ public class Employee : Person
     public override void MoveTo(Vector3 destination)
     {
         throw new System.NotImplementedException();
+        //AkSoundEngine.StopPlayingID(walkEvent);
+        //walkEvent = AkSoundEngine.PostEvent("Walk", gameObject);
     }
 
     public override Person Deselect(Material deselectedMaterial)
@@ -50,6 +54,8 @@ public class Employee : Person
     }
 
     public override void StoppedMoving() {
+
         throw new System.NotImplementedException();
+        //AkSoundEngine.StopPlayingID(walkEvent);
     }
 }
