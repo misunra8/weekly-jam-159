@@ -322,6 +322,7 @@ GameObject:
   - component: {fileID: 336801960}
   - component: {fileID: 336801962}
   - component: {fileID: 336801961}
+  - component: {fileID: 336801963}
   m_Layer: 8
   m_Name: Machines
   m_TagString: Untagged
@@ -428,6 +429,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &336801963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 336801959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d1399fabec2614daa56e76737e200c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &510495002
 GameObject:
   m_ObjectHideFlags: 0
