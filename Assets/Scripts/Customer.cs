@@ -29,8 +29,13 @@ public class Customer : Person
         
     }
 
+    /// <summary>
+    /// Requests service at the counter, leave the line
+    /// </summary>
+    /// <param name="cell">Cell of the collided counter</param>
     protected override void ActOnMachineCollision(Vector3Int cell)
     {
+        behavior.SetTrigger("Leave line");
         
     }
 
@@ -41,18 +46,6 @@ public class Customer : Person
     public void WaitInLine(Vector3 waitingSpot)
     {
         SetPathDestination(waitingSpot);
-    }
-
-    /// <summary>
-    /// Cursor selected the customer
-    /// </summary>
-    /// <param name="selectedMaterial">Selection material</param>
-    public override Person Select(Material selectedMaterial)
-    {
-        // change material
-        base.Select(selectedMaterial);
-
-        return this;
     }
 
     /// <summary>
@@ -73,18 +66,5 @@ public class Customer : Person
             
 
         Debug.Log("path finished");
-    }
-
-    /// <summary>
-    /// Deselect the customer
-    /// </summary>
-    /// <param name="deselectedMaterial">Deselection material</param>
-    /// <returns></returns>
-    public override Person Deselect(Material deselectedMaterial)
-    {
-        // change material
-        base.Deselect(deselectedMaterial);
-
-        return this;
     }
 }
