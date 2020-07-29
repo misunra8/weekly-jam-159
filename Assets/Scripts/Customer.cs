@@ -13,6 +13,11 @@ public class Customer : Person
     public bool CanWalk = true;
 
     private uint walkEvent;
+    [NonSerialized]
+    public WaitingArea WaitingArea;
+    
+    [NonSerialized]
+    public Vector3Int WaitingSpot;
 
     private void OnMouseDown() {
         AkSoundEngine.PostEvent("CoinPay",gameObject);
@@ -36,7 +41,7 @@ public class Customer : Person
     protected override void ActOnMachineCollision(Vector3Int cell)
     {
         behavior.SetTrigger("Leave line");
-        
+        WaitingArea.LeaveLine(WaitingSpot);
     }
 
     /// <summary>

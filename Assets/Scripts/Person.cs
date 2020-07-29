@@ -39,9 +39,10 @@ public abstract class Person : MonoBehaviour
     protected Rigidbody2D rigidbody2d;
 
     /// <summary>
-    /// Any velocity under this is considered 0
+    /// Any distance under this is considered arrived
     /// </summary>
-    public float StopVelocityThreshold = 0.1f;
+    [Tooltip("Used to see if the agent arrived at the A* target")]
+    public float PathArrivalThreshold = 0.1f;
 
 
     private void Start()
@@ -51,16 +52,16 @@ public abstract class Person : MonoBehaviour
 
     private void Update()
     {
-        CheckMovingStatus();
+        CheckPathArrivalStatus();
     }
 
     /// <summary>
-    /// Checks whether the person stops moving
+    /// Checks whether the person is close enough to the path target
     /// </summary>
-    private void CheckMovingStatus()
+    private void CheckPathArrivalStatus()
     {
-        var velocity = rigidbody2d.velocity;
-        if (Mathf.Abs(velocity.x) < StopVelocityThreshold || Mathf.Abs(velocity.y) < StopVelocityThreshold)
+        var distance = Vector3.Distance(this.transform.position, pairedEmpty.transform.position);
+        if (distance < PathArrivalThreshold)
             StoppedMoving();
         
             

@@ -62,7 +62,7 @@ public class WaitingArea : MonoBehaviour
     /// <summary>
     /// Gives a free waiting spot location, throws exception
     /// </summary>
-    public Vector3 WaitInLine()
+    public Vector3 WaitInLine(Customer customer)
     {
         // deny entry if no waiting spots are available
         if (occupancyCount == waitingSpots.Count)
@@ -71,21 +71,22 @@ public class WaitingArea : MonoBehaviour
         var position = waitingSpots.Dequeue();
         occupancyCount++;
 
+        customer.WaitingSpot = position;
+
         return tilemap.GetCellCenterWorld(position);
     }
 
     /// <summary>
     /// Free up a spot in the line, throws exception
     /// </summary>
-    /// <param name="customer">Customer to leave the line</param>
-    public void LeaveLine(Vector3Int machineCell)
+    public void LeaveLine(Vector3Int freeWaitingSpot)
     {
         // throw error if no one is in line
         if (occupancyCount == 0) throw new System.Exception("No one is in line");
         occupancyCount--;
 
         // add the free position
-        waitingSpots.Enqueue(machineCell);
+        waitingSpots.Enqueue(freeWaitingSpot);
     }
 
     /// <summary>

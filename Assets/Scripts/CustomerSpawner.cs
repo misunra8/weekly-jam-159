@@ -65,6 +65,8 @@ public class CustomerSpawner : MonoBehaviour {
         AkSoundEngine.PostEvent("DoorOpen", gameObject);
         var customer = Instantiate(customerPrefab, transform.position, Quaternion.identity);
 
+        customer.GetComponent<Customer>().WaitingArea = waitingArea;
+
         // pair an empty
         PairEmpty(customer);
 
@@ -85,13 +87,13 @@ public class CustomerSpawner : MonoBehaviour {
     }
 
     /// <summary>
-    /// Sends customer to wait in line
+    /// Sends customer to wait in line, also link the waiting area script
     /// </summary>
     /// <param name="customer"></param>
     private void WaitInLine(GameObject customer)
     {
         var customerScript = customer.GetComponent<Customer>();
-        var spot = waitingArea.WaitInLine();
+        var spot = waitingArea.WaitInLine(customerScript);
         customerScript.WaitInLine(spot);
     }
 
