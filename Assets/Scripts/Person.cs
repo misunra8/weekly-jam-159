@@ -42,7 +42,7 @@ public abstract class Person : MonoBehaviour
     /// Any distance under this is considered arrived
     /// </summary>
     [Tooltip("Used to see if the agent arrived at the A* target")]
-    public float PathArrivalThreshold = 0.1f;
+    public float PathArrivalThreshold = 1f;
 
     private void Start()
     {

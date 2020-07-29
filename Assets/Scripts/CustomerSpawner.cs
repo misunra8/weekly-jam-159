@@ -80,9 +80,9 @@ public class CustomerSpawner : MonoBehaviour {
     /// <param name="customer"></param>
     private void PairEmpty(GameObject customer)
     {
-        var empty = Instantiate(targetEmptiesParent, transform.position, Quaternion.identity,
-            targetEmptiesParent.transform);
+        var empty = new GameObject();
         empty.name = "Customer target empty";
+        empty.transform.SetParent(this.targetEmptiesParent.transform);
         customer.GetComponent<Customer>().PairEmpty(empty);
     }
 
