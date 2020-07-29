@@ -22,7 +22,6 @@ public class Customer : Person
     private void OnMouseDown() {
         AkSoundEngine.PostEvent("CoinPay",gameObject);
         AkSoundEngine.SetRTPCValue("Theme_RTPC", 20);
-        AkSoundEngine.StopPlayingID(walkEvent);
     }
 
     /// <summary>
@@ -62,7 +61,7 @@ public class Customer : Person
     {
         // only moves when the customer is allowed to
         if (CanWalk) {
-            Debug.Log("walking");
+            AkSoundEngine.StopPlayingID(walkEvent);
             walkEvent = AkSoundEngine.PostEvent("Walk", gameObject);
             Debug.Log(walkEvent);
             SetPathDestination(destination);
@@ -73,6 +72,5 @@ public class Customer : Person
 
     public override void StoppedMoving() {
         AkSoundEngine.StopPlayingID(walkEvent);
-        Debug.Log("someone stopped moving");
     }
 }
