@@ -129,7 +129,11 @@ public abstract class Person : MonoBehaviour
     /// Sets the destination of the pathfinding algorithm
     /// </summary>
     /// <param name="destination"></param>
-    protected abstract void SetPathDestination(Vector3 destination);
+    protected void SetPathDestination(Vector3 destination)
+    {
+        pairedEmpty.transform.position = destination;
+        pathSetter.target = pairedEmpty.transform;
+    }
 
     /// <summary>
     /// Get current destination of the A* algorithm

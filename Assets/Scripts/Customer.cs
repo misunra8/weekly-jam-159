@@ -38,9 +38,4 @@ public class Customer : Person
         SetPathDestination(waitingSpot);
     }
 
-    protected override void SetPathDestination(Vector3 destination)
-    {
-        pairedEmpty.transform.position = destination;
-        pathSetter.target = pairedEmpty.transform;
-    }
 }

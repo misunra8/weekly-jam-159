@@ -34,11 +34,14 @@ public class WaitingArea : MonoBehaviour
     {
         tilemap = GetComponent<Tilemap>();
         // finds all rug cell positions
-        // rugs must be in a rectangular formation
-        foreach (var item in tilemap.cellBounds.allPositionsWithin)
+        foreach (var cell in tilemap.cellBounds.allPositionsWithin)
         {
-            waitingSpots.Enqueue(item);
-            //Debug.Log(item);
+            
+            var tile = tilemap.GetTile(cell);
+
+            if (tile != null)
+                waitingSpots.Enqueue(cell);
+            
         }
 
     }
