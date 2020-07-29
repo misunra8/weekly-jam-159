@@ -62,12 +62,10 @@ public abstract class Person : MonoBehaviour
     {
         if (pairedEmpty == null) return;
         var distance = Vector2.Distance(this.transform.position, pairedEmpty.transform.position);
-        if (distance < 0.15f) {
+        if (distance < 0.5f) {
             StoppedMoving();
         }
-            
-        
-            
+    
     }
 
     /// <summary>
@@ -119,7 +117,6 @@ public abstract class Person : MonoBehaviour
 
         // Custom action on the collided table
         ActOnTableCollision(cell);
-        AkSoundEngine.PostEvent("CoinPay", gameObject);
     }
 
     /// <summary>

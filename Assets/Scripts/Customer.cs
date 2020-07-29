@@ -20,6 +20,7 @@ public class Customer : Person
     public Vector3Int WaitingSpot;
 
     private void OnMouseDown() {
+        CanWalk = true;
         AkSoundEngine.PostEvent("CoinPay",gameObject);
         AkSoundEngine.SetRTPCValue("Theme_RTPC", 20);
     }
@@ -30,7 +31,9 @@ public class Customer : Person
     /// <param name="cell"></param>
     protected override void ActOnTableCollision(Vector3Int cell)
     {
-        
+        AkSoundEngine.StopPlayingID(walkEvent);
+        CanWalk = false;
+
     }
 
     /// <summary>
@@ -72,4 +75,5 @@ public class Customer : Person
     public override void StoppedMoving() {
         AkSoundEngine.StopPlayingID(walkEvent);
     }
+
 }
