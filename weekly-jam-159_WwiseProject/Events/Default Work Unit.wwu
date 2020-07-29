@@ -47,6 +47,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Walk" ID="{0D60DEB1-76AE-4F1A-904A-BAE2A77EF368}">
+					<ChildrenList>
+						<Action Name="" ID="{FA1E7048-63FB-4609-9333-E1F29CFF4D14}" ShortID="428258052">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Walk" ID="{90AEBBD2-B624-4645-85AD-6F666DFF4A2E}" WorkUnitID="{638493B3-4342-4AA6-A351-A5A3D2BE5F90}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

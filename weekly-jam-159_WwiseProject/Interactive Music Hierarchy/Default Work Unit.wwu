@@ -20,7 +20,7 @@
 										<PointList>
 											<Point>
 												<XPos>0</XPos>
-												<YPos>-0</YPos>
+												<YPos>0</YPos>
 												<Flags>5</Flags>
 											</Point>
 											<Point>
@@ -41,7 +41,7 @@
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+							<ObjectRef Name="ConversionCustom" ID="{2981F2F9-07E3-4D32-BEE8-907D4165D15A}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
 						</Reference>
 						<Reference Name="OutputBus">
 							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
@@ -391,7 +391,7 @@
 														<PointList>
 															<Point>
 																<XPos>0</XPos>
-																<YPos>-0</YPos>
+																<YPos>0</YPos>
 																<Flags>5</Flags>
 															</Point>
 															<Point>

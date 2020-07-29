@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID DOOROPEN = 1404805401U;
         static const AkUniqueID POURING = 3841775605U;
         static const AkUniqueID THEMEPLAY = 1419635814U;
+        static const AkUniqueID WALK = 2108779966U;
     } // namespace EVENTS
 
     namespace GAME_PARAMETERS

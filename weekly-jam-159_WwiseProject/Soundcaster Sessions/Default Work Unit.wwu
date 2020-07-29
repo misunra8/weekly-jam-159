@@ -15,6 +15,10 @@
 							<GameParameterRef Name="Theme_RTPC" ID="{586F2A29-1028-4BA5-8EDF-ECE18635E8D2}"/>
 							<Value>67</Value>
 						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Walk_RTPC" ID="{02CA34C8-44BD-4CD5-975D-3C08F6A373B7}"/>
+							<Value>50</Value>
+						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true"/>

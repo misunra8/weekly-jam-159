@@ -80,19 +80,19 @@
 					<IncludedMemoryFiles>
 						<File Id="174523660" Language="SFX">
 							<ShortName>qubodup-DoorOpen01.wav</ShortName>
-							<Path>SFX\qubodup-DoorOpen01_9F865583.wem</Path>
+							<Path>SFX\qubodup-DoorOpen01_012D7342.wem</Path>
 						</File>
 						<File Id="764411919" Language="SFX">
 							<ShortName>qubodup-DoorClose06.wav</ShortName>
-							<Path>SFX\qubodup-DoorClose06_FE9629DF.wem</Path>
+							<Path>SFX\qubodup-DoorClose06_3ABC1A10.wem</Path>
 						</File>
 						<File Id="854304745" Language="SFX">
 							<ShortName>qubodup-DoorClose07.wav</ShortName>
-							<Path>SFX\qubodup-DoorClose07_29CF8610.wem</Path>
+							<Path>SFX\qubodup-DoorClose07_3F82123E.wem</Path>
 						</File>
 						<File Id="887911261" Language="SFX">
 							<ShortName>qubodup-DoorOpen02.wav</ShortName>
-							<Path>SFX\qubodup-DoorOpen02_97153A6A.wem</Path>
+							<Path>SFX\qubodup-DoorOpen02_0E411943.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -100,11 +100,11 @@
 					<IncludedMemoryFiles>
 						<File Id="192499742" Language="SFX">
 							<ShortName>pouring (1).wav</ShortName>
-							<Path>SFX\pouring (1)_B171BA87.wem</Path>
+							<Path>SFX\pouring (1)_B20F6143.wem</Path>
 						</File>
 						<File Id="698729837" Language="SFX">
 							<ShortName>pouring (2).wav</ShortName>
-							<Path>SFX\pouring (2)_F56576D6.wem</Path>
+							<Path>SFX\pouring (2)_A6AC8335.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -133,6 +133,14 @@
 						<File Id="937805081" Language="SFX">
 							<ShortName>theme_cor_ang.wav</ShortName>
 							<Path>SFX\theme_cor_ang_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2108779966" Name="Walk" ObjectPath="\Events\Default Work Unit\Walk" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="219183969" Language="SFX">
+							<ShortName>footsteps-4.wav</ShortName>
+							<Path>SFX\footsteps-4_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

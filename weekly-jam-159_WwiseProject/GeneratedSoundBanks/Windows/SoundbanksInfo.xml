@@ -20,59 +20,59 @@
 					<IncludedMemoryFiles>
 						<File Id="34831605" Language="SFX">
 							<ShortName>coinLong (3).wav</ShortName>
-							<Path>SFX\coinLong (3)_10C4C929.wem</Path>
+							<Path>SFX\coinLong (3)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="56555761" Language="SFX">
 							<ShortName>coinLong (6).wav</ShortName>
-							<Path>SFX\coinLong (6)_10C4C929.wem</Path>
+							<Path>SFX\coinLong (6)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="65327589" Language="SFX">
 							<ShortName>chaching.wav</ShortName>
-							<Path>SFX\chaching_10C4C929.wem</Path>
+							<Path>SFX\chaching_3F75BDB9.wem</Path>
 						</File>
 						<File Id="111641699" Language="SFX">
 							<ShortName>coinLong (2).wav</ShortName>
-							<Path>SFX\coinLong (2)_10C4C929.wem</Path>
+							<Path>SFX\coinLong (2)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="150272906" Language="SFX">
 							<ShortName>chaching (2).wav</ShortName>
-							<Path>SFX\chaching (2)_10C4C929.wem</Path>
+							<Path>SFX\chaching (2)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="188942863" Language="SFX">
 							<ShortName>zipperA (4).wav</ShortName>
-							<Path>SFX\zipperA (4)_10C4C929.wem</Path>
+							<Path>SFX\zipperA (4)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="353829220" Language="SFX">
 							<ShortName>coinLong (4).wav</ShortName>
-							<Path>SFX\coinLong (4)_10C4C929.wem</Path>
+							<Path>SFX\coinLong (4)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="366793873" Language="SFX">
 							<ShortName>coinLong (7).wav</ShortName>
-							<Path>SFX\coinLong (7)_10C4C929.wem</Path>
+							<Path>SFX\coinLong (7)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="540316767" Language="SFX">
 							<ShortName>coinLong (8).wav</ShortName>
-							<Path>SFX\coinLong (8)_10C4C929.wem</Path>
+							<Path>SFX\coinLong (8)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="575118842" Language="SFX">
 							<ShortName>zipperA (1).wav</ShortName>
-							<Path>SFX\zipperA (1)_10C4C929.wem</Path>
+							<Path>SFX\zipperA (1)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="765882545" Language="SFX">
 							<ShortName>coinLong (1).wav</ShortName>
-							<Path>SFX\coinLong (1)_10C4C929.wem</Path>
+							<Path>SFX\coinLong (1)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="833060530" Language="SFX">
 							<ShortName>zipperA (2).wav</ShortName>
-							<Path>SFX\zipperA (2)_10C4C929.wem</Path>
+							<Path>SFX\zipperA (2)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="880118003" Language="SFX">
 							<ShortName>coinLong (5).wav</ShortName>
-							<Path>SFX\coinLong (5)_10C4C929.wem</Path>
+							<Path>SFX\coinLong (5)_3F75BDB9.wem</Path>
 						</File>
 						<File Id="970509562" Language="SFX">
 							<ShortName>zipperA (3).wav</ShortName>
-							<Path>SFX\zipperA (3)_10C4C929.wem</Path>
+							<Path>SFX\zipperA (3)_3F75BDB9.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -80,19 +80,19 @@
 					<IncludedMemoryFiles>
 						<File Id="174523660" Language="SFX">
 							<ShortName>qubodup-DoorOpen01.wav</ShortName>
-							<Path>SFX\qubodup-DoorOpen01_9F865583.wem</Path>
+							<Path>SFX\qubodup-DoorOpen01_3AA7E4B2.wem</Path>
 						</File>
 						<File Id="764411919" Language="SFX">
 							<ShortName>qubodup-DoorClose06.wav</ShortName>
-							<Path>SFX\qubodup-DoorClose06_FE9629DF.wem</Path>
+							<Path>SFX\qubodup-DoorClose06_90AA5900.wem</Path>
 						</File>
 						<File Id="854304745" Language="SFX">
 							<ShortName>qubodup-DoorClose07.wav</ShortName>
-							<Path>SFX\qubodup-DoorClose07_29CF8610.wem</Path>
+							<Path>SFX\qubodup-DoorClose07_554280AE.wem</Path>
 						</File>
 						<File Id="887911261" Language="SFX">
 							<ShortName>qubodup-DoorOpen02.wav</ShortName>
-							<Path>SFX\qubodup-DoorOpen02_97153A6A.wem</Path>
+							<Path>SFX\qubodup-DoorOpen02_2C7970B3.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -100,11 +100,11 @@
 					<IncludedMemoryFiles>
 						<File Id="192499742" Language="SFX">
 							<ShortName>pouring (1).wav</ShortName>
-							<Path>SFX\pouring (1)_B171BA87.wem</Path>
+							<Path>SFX\pouring (1)_857EE573.wem</Path>
 						</File>
 						<File Id="698729837" Language="SFX">
 							<ShortName>pouring (2).wav</ShortName>
-							<Path>SFX\pouring (2)_F56576D6.wem</Path>
+							<Path>SFX\pouring (2)_B8251265.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -112,27 +112,35 @@
 					<IncludedMemoryFiles>
 						<File Id="23388992" Language="SFX">
 							<ShortName>theme_spic_bass.wav</ShortName>
-							<Path>SFX\theme_spic_bass_D79FB2B7.wem</Path>
+							<Path>SFX\theme_spic_bass_9EDFC787.wem</Path>
 						</File>
 						<File Id="70286258" Language="SFX">
 							<ShortName>theme_bassoon.wav</ShortName>
-							<Path>SFX\theme_bassoon_D79FB2B7.wem</Path>
+							<Path>SFX\theme_bassoon_9EDFC787.wem</Path>
 						</File>
 						<File Id="206032748" Language="SFX">
 							<ShortName>theme_flutes.wav</ShortName>
-							<Path>SFX\theme_flutes_D79FB2B7.wem</Path>
+							<Path>SFX\theme_flutes_9EDFC787.wem</Path>
 						</File>
 						<File Id="607650258" Language="SFX">
 							<ShortName>theme_keys.wav</ShortName>
-							<Path>SFX\theme_keys_D79FB2B7.wem</Path>
+							<Path>SFX\theme_keys_9EDFC787.wem</Path>
 						</File>
 						<File Id="630560050" Language="SFX">
 							<ShortName>theme_pizz_high.wav</ShortName>
-							<Path>SFX\theme_pizz_high_D79FB2B7.wem</Path>
+							<Path>SFX\theme_pizz_high_9EDFC787.wem</Path>
 						</File>
 						<File Id="937805081" Language="SFX">
 							<ShortName>theme_cor_ang.wav</ShortName>
-							<Path>SFX\theme_cor_ang_D79FB2B7.wem</Path>
+							<Path>SFX\theme_cor_ang_9EDFC787.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2108779966" Name="Walk" ObjectPath="\Events\Default Work Unit\Walk" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="219183969" Language="SFX">
+							<ShortName>footsteps-4.wav</ShortName>
+							<Path>SFX\footsteps-4_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

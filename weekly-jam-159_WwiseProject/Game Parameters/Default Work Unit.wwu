@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{10A474B3-106A-476C-8C66-87DD56FAA445}" PersistMode="Standalone">
 			<ChildrenList>
 				<GameParameter Name="Theme_RTPC" ID="{586F2A29-1028-4BA5-8EDF-ECE18635E8D2}"/>
+				<GameParameter Name="Walk_RTPC" ID="{02CA34C8-44BD-4CD5-975D-3C08F6A373B7}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</GameParameters>
