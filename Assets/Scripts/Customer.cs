@@ -9,6 +9,8 @@ using Pathfinding;
 /// </summary>
 public class Customer : Person
 {
+    [NonSerialized]
+    public bool CanWalk = true;
 
     private void OnMouseDown() {
         AkSoundEngine.PostEvent("CoinPay",gameObject);
@@ -56,9 +58,9 @@ public class Customer : Person
     /// <param name="destination"></param>
     public override void MoveTo(Vector3 destination)
     {
-        // only moves when the customer is waiting in line
-
-        SetPathDestination(destination);
+        // only moves when the customer is allowed to
+        if (CanWalk)
+            SetPathDestination(destination);
     }
 
     /// <summary>
