@@ -1234,44 +1234,6 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
-						<Property Name="Volume" Type="Real64">
-							<RTPCList>
-								<RTPC Name="" ID="{5D775296-69FF-4BF6-9C23-5C67CE9BD53F}" ShortID="509990819">
-									<ReferenceList>
-										<Reference Name="ControlInput">
-											<ObjectRef Name="Walk_RTPC" ID="{02CA34C8-44BD-4CD5-975D-3C08F6A373B7}" WorkUnitID="{10A474B3-106A-476C-8C66-87DD56FAA445}"/>
-										</Reference>
-									</ReferenceList>
-									<Curve Name="" ID="{B4507E69-DE73-40F4-9C6C-BD83A8BAC57F}">
-										<PropertyList>
-											<Property Name="Flags" Type="int32" Value="3"/>
-										</PropertyList>
-										<PointList>
-											<Point>
-												<XPos>0</XPos>
-												<YPos>-0</YPos>
-												<Flags>5</Flags>
-											</Point>
-											<Point>
-												<XPos>50</XPos>
-												<YPos>0</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>50.001</XPos>
-												<YPos>-200</YPos>
-												<Flags>0</Flags>
-											</Point>
-											<Point>
-												<XPos>100</XPos>
-												<YPos>-200</YPos>
-												<Flags>37</Flags>
-											</Point>
-										</PointList>
-									</Curve>
-								</RTPC>
-							</RTPCList>
-						</Property>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">

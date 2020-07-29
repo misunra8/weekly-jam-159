@@ -23,6 +23,7 @@ namespace AK
     namespace GAME_PARAMETERS
     {
         static const AkUniqueID THEME_RTPC = 4095641762U;
+        static const AkUniqueID WALK_RTPC = 956141160U;
     } // namespace GAME_PARAMETERS
 
     namespace BANKS
