@@ -40,6 +40,7 @@ public class Customer : Person
     /// <param name="cell">Cell of the collided counter</param>
     protected override void ActOnMachineCollision(Vector3Int cell)
     {
+        // free up the line, change behavior state
         behavior.SetTrigger("Leave line");
         WaitingArea.LeaveLine(WaitingSpot);
     }
