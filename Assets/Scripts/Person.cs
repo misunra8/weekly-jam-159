@@ -43,6 +43,7 @@ public abstract class Person : MonoBehaviour
     /// </summary>
     public float StopVelocityThreshold = 0.1f;
 
+
     private void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
@@ -61,15 +62,14 @@ public abstract class Person : MonoBehaviour
         var velocity = rigidbody2d.velocity;
         if (Mathf.Abs(velocity.x) < StopVelocityThreshold || Mathf.Abs(velocity.y) < StopVelocityThreshold)
             StoppedMoving();
+        
+            
     }
 
     /// <summary>
     /// What to do when the person stops moving
     /// </summary>
-    private void StoppedMoving()
-    {
-        Debug.Log("someone stopped moving");
-    }
+    public abstract void StoppedMoving();
 
     /// <summary>
     /// Standard Unity collision listener method

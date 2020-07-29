@@ -63,8 +63,10 @@ public class Customer : Person
             //walk.Stop(gameObject);
             
         }
-            
+    }
 
-        Debug.Log("path finished");
+    public override void StoppedMoving() {
+        AkSoundEngine.StopPlayingID(walkEvent);
+        Debug.Log("someone stopped moving");
     }
 }

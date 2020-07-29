@@ -48,4 +48,8 @@ public class Employee : Person
         base.Deselect(deselectedMaterial);
         return this;
     }
+
+    public override void StoppedMoving() {
+        throw new System.NotImplementedException();
+    }
 }
