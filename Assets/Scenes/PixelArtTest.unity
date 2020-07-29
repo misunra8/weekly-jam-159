@@ -2767,6 +2767,7 @@ GameObject:
   - component: {fileID: 1864616075}
   - component: {fileID: 1864616077}
   - component: {fileID: 1864616076}
+  - component: {fileID: 1864616078}
   m_Layer: 0
   m_Name: WaitingArea
   m_TagString: Untagged
@@ -3077,6 +3078,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1864616078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864616074}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f3bb1c08d81e694fafafdc3edc2a760, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2025699367 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1003020472550027962, guid: 349e1be59f6b4c6428eb22927570557f,
