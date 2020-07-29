@@ -59,6 +59,7 @@ public abstract class Person : MonoBehaviour
     /// </summary>
     private void CheckPathArrivalStatus()
     {
+        if (pairedEmpty == null) return;
         var distance = Vector3.Distance(this.transform.position, pairedEmpty.transform.position);
         if (distance < PathArrivalThreshold)
             StoppedMoving();
