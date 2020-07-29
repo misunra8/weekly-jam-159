@@ -38,4 +38,13 @@ public class Customer : Person
         SetPathDestination(waitingSpot);
     }
 
+    /// <summary>
+    /// Cursor clicked the customer
+    /// </summary>
+    /// <param name="selectedMaterial">Selection material</param>
+    public override void OnClick(Material selectedMaterial)
+    {
+        Debug.Log("clicked this");
+        GetComponentInChildren<SpriteRenderer>().material = selectedMaterial;
+    }
 }

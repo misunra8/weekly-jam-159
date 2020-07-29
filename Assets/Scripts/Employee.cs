@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Employee : MonoBehaviour
+public class Employee : Person
 {
     // Start is called before the first frame update
     void Start()
@@ -23,4 +23,18 @@ public class Employee : MonoBehaviour
         AkSoundEngine.SetRTPCValue("Theme_RTPC", 40);
     }
 
+    protected override void ActOnMachineCollision(Vector3Int cell)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    protected override void ActOnTableCollision(Vector3Int cell)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override void OnClick(Material selectedMaterial)
+    {
+        throw new System.NotImplementedException();
+    }
 }

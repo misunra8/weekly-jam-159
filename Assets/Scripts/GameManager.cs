@@ -41,13 +41,19 @@ public class GameManager : MonoBehaviour
     /// <param name="hit"></param>
     private void LeftClickCollision(RaycastHit2D hit)
     {
+
         switch (hit.collider.gameObject.name)
         {
             case "Customer":
+            case "Customer(Clone)":
+                hit.collider.GetComponent<Customer>().OnClick(SelectedMaterial);
+                break;
+
             case "Employee":
+            case "Employee(Clone)":
 
                 // change to the color of selection
-                hit.collider.GetComponentInChildren<SpriteRenderer>().material = SelectedMaterial;
+                hit.collider.GetComponent<Employee>().OnClick(SelectedMaterial);
 
                 break;
 

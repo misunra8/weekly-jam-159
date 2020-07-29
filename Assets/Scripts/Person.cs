@@ -141,8 +141,16 @@ public abstract class Person : MonoBehaviour
     /// <returns></returns>
     public Vector3 GetPathDestination() => this.pairedEmpty.transform.position;
 
+    /// <summary>
+    /// Memory management
+    /// </summary>
     private void OnDestroy()
     {
         Destroy(pairedEmpty);
     }
+
+    /// <summary>
+    /// When the person is clicked on
+    /// </summary>
+    public abstract void OnClick(Material selectedMaterial);
 }
