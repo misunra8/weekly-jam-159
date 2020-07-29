@@ -33,7 +33,44 @@ public abstract class Person : MonoBehaviour
     /// </summary>
     protected GameObject pairedEmpty;
 
-    
+    /// <summary>
+    /// Reference to the rigid body 2d component
+    /// </summary>
+    protected Rigidbody2D rigidbody2d;
+
+    /// <summary>
+    /// Any velocity under this is considered 0
+    /// </summary>
+    public float StopVelocityThreshold = 0.1f;
+
+    private void Start()
+    {
+        rigidbody2d = GetComponent<Rigidbody2D>();
+    }
+
+    private void Update()
+    {
+        CheckMovingStatus();
+    }
+
+    /// <summary>
+    /// Checks whether the person stops moving
+    /// </summary>
+    private void CheckMovingStatus()
+    {
+        var velocity = rigidbody2d.velocity;
+        if (Mathf.Abs(velocity.x) < StopVelocityThreshold || Mathf.Abs(velocity.y) < StopVelocityThreshold)
+            StoppedMoving();
+    }
+
+    /// <summary>
+    /// What to do when the person stops moving
+    /// </summary>
+    private void StoppedMoving()
+    {
+        Debug.Log("someone stopped moving");
+    }
+
     /// <summary>
     /// Standard Unity collision listener method
     /// </summary>
@@ -69,7 +106,7 @@ public abstract class Person : MonoBehaviour
     protected abstract void ActOnMachineCollision(Vector3Int cell);
 
     /// <summary>
-    /// Triggers an interaction between the customer and the table
+    /// Triggers an interaction between the person and the table
     /// </summary>
     /// <param name="other">Unity's detected collision</param>
     private void CollideTable(Collision2D other)

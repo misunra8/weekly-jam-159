@@ -78,15 +78,14 @@ public class WaitingArea : MonoBehaviour
     /// Free up a spot in the line, throws exception
     /// </summary>
     /// <param name="customer">Customer to leave the line</param>
-    public void LeaveLine(GameObject customer)
+    public void LeaveLine(Vector3Int machineCell)
     {
         // throw error if no one is in line
         if (occupancyCount == 0) throw new System.Exception("No one is in line");
         occupancyCount--;
 
         // add the free position
-        var position = tilemap.WorldToCell(customer.transform.position);
-        waitingSpots.Enqueue(position);
+        waitingSpots.Enqueue(machineCell);
     }
 
     /// <summary>
