@@ -9,13 +9,26 @@ using Pathfinding;
 /// </summary>
 public class Customer : Person
 {
+    /// <summary>
+    /// Flag telling if the customer can walk anywhere
+    /// </summary>
     [NonSerialized]
     public bool CanWalk = true;
 
+    /// <summary>
+    /// For audio
+    /// </summary>
     private uint walkEvent;
+    
+    /// <summary>
+    /// Reference to the waiting area script
+    /// </summary>
     [NonSerialized]
     public WaitingArea WaitingArea;
     
+    /// <summary>
+    /// Location where the customer waits in line
+    /// </summary>
     [NonSerialized]
     public Vector3Int WaitingSpot;
 
