@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1240512178	Bell			\Default Work Unit\Bell	
 	1303789868	CoinPay			\Default Work Unit\CoinPay	
 	1404805401	DoorOpen			\Default Work Unit\DoorOpen	
 	1419635814	ThemePlay			\Default Work Unit\ThemePlay	
@@ -30,6 +31,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	698729837	pouring (2)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\pouring (2)_A6AC8335.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pouring\pouring (2)		726684
 	764411919	qubodup-DoorClose06	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\qubodup-DoorClose06_3ABC1A10.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpen\qubodup-DoorClose06		130648
 	765882545	coinLong (1)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\coinLong (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (1)		229416
+	782395007	Bell	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\bell_9620BEFA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bell		192352
 	833060530	zipperA (2)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\zipperA (2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\Zipper\zipperA (2)		88672
 	854304745	qubodup-DoorClose07	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\qubodup-DoorClose07_3F82123E.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpen\qubodup-DoorClose07		83240
 	880118003	coinLong (5)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\coinLong (5)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (5)		197664

@@ -95,7 +95,7 @@ public abstract class Person : MonoBehaviour
 
     private void CollideMachine(Collision2D other)
     {
-        var cell = GetCollisionCell(other);
+        Vector3Int cell = GetCollisionCell(other);
 
         // custom action on the collided machine
         ActOnMachineCollision(cell);

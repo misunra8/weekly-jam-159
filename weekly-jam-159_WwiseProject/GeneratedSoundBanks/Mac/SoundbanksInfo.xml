@@ -16,6 +16,14 @@
 			<ShortName>MainSB</ShortName>
 			<Path>MainSB.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1240512178" Name="Bell" ObjectPath="\Events\Default Work Unit\Bell" DurationType="OneShot" DurationMin="1.090071" DurationMax="1.090071">
+					<IncludedMemoryFiles>
+						<File Id="782395007" Language="SFX">
+							<ShortName>bell.wav</ShortName>
+							<Path>SFX\bell_9620BEFA.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1303789868" Name="CoinPay" ObjectPath="\Events\Default Work Unit\CoinPay" DurationType="OneShot" DurationMin="1.974153" DurationMax="2.608898">
 					<IncludedMemoryFiles>
 						<File Id="34831605" Language="SFX">

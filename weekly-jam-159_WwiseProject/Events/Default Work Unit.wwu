@@ -58,6 +58,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Bell" ID="{8896B4BF-AACB-460D-A0B6-CD7112D8DB3E}">
+					<ChildrenList>
+						<Action Name="" ID="{6324E79A-F93A-4A6E-B74A-EDDAD2FED4E9}" ShortID="247876848">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Bell" ID="{02C5708F-3F35-49B0-84B3-40BCAB43CF12}" WorkUnitID="{638493B3-4342-4AA6-A351-A5A3D2BE5F90}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

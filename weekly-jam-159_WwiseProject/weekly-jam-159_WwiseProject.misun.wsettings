@@ -6,6 +6,7 @@
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\misun\Desktop\Early Projects\Week159_Jam\jam sound assets\Sampled\"/>
 				<Property Name="Event Action List\{0D60DEB1-76AE-4F1A-904A-BAE2A77EF368}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7290DB14-B914-40B7-A4D3-7EAFD4E8BCC0}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8896B4BF-AACB-460D-A0B6-CD7112D8DB3E}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{8C7A15F1-A66B-4B1B-8BE5-F70D980118A6}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AAB7369C-AB26-46CB-AF15-D0A6DA63A886}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E195BABE-5948-41C9-8902-9389787F1120}\x64_Expand States" Type="string" Value=""/>
