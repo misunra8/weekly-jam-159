@@ -63,7 +63,6 @@ public class Customer : Person
         if (CanWalk) {
             AkSoundEngine.StopPlayingID(walkEvent);
             walkEvent = AkSoundEngine.PostEvent("Walk", gameObject);
-            Debug.Log(walkEvent);
             SetPathDestination(destination);
             //walk.Stop(gameObject);
             
