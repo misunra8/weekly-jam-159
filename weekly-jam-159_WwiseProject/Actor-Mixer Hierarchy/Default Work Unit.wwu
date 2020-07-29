@@ -1329,6 +1329,177 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="DoorOpen" ID="{4B4BB390-8D54-44B9-B008-EFA8D5AF3554}" ShortID="361957808">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7C050196-2B56-43AC-AB27-C3F2C60360E7}">
+										<PropertyList>
+											<Property Name="Max" Type="Real64" Value="36"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{06099033-93A5-4618-82AA-9CC74A43356D}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="227"/>
+											<Property Name="Min" Type="Real64" Value="-455"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="RenderEffect0" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Compressor" CompanyID="0" PluginID="108" PluginType="3">
+							<ObjectRef Name="New_Wwise_Compressor" ID="{69E037E5-9B12-43E7-8E47-4AD21C9C9932}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="qubodup-DoorOpen01" ID="{C709FFBE-4AC7-4A6A-8551-2E7F5F647FF5}" ShortID="1064123002">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="qubodup-DoorOpen01" ID="{974E913D-C574-49F2-9469-763EC2537B34}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.287317620650954"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.599326599326599"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>qubodup-DoorOpen01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="174523660"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="qubodup-DoorOpen01" ID="{974E913D-C574-49F2-9469-763EC2537B34}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="qubodup-DoorOpen02" ID="{7628D18F-0CB9-4246-9691-DE14A54DFE93}" ShortID="1052717298">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="qubodup-DoorOpen02" ID="{138855DF-8A17-46C4-AAC5-70F07FE00C87}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.107744107744108"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.421997755331089"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>qubodup-DoorOpen02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="887911261"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="qubodup-DoorOpen02" ID="{138855DF-8A17-46C4-AAC5-70F07FE00C87}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="qubodup-DoorClose06" ID="{D27C7FC0-D3A8-4E45-8F3C-13A48D2AB62D}" ShortID="217724337">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="qubodup-DoorClose06" ID="{740C2EEF-CE39-45E7-ABE0-6203AE77BF5C}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.144781144781145"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.198653198653199"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.68013468013468"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>qubodup-DoorClose06.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="764411919"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="qubodup-DoorClose06" ID="{740C2EEF-CE39-45E7-ABE0-6203AE77BF5C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="qubodup-DoorClose07" ID="{825F822C-72CC-4A07-BD60-158E0D07626E}" ShortID="936796244">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="qubodup-DoorClose07" ID="{0657F152-F1C1-4206-AB7A-A416C5CC99AE}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0740740740740741"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.19304152637486"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.433221099887767"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>qubodup-DoorClose07.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="854304745"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="qubodup-DoorClose07" ID="{0657F152-F1C1-4206-AB7A-A416C5CC99AE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

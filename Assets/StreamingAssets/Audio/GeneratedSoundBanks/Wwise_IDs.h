@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID COINPAY = 1303789868U;
+        static const AkUniqueID DOOROPEN = 1404805401U;
         static const AkUniqueID THEMEPLAY = 1419635814U;
     } // namespace EVENTS
 

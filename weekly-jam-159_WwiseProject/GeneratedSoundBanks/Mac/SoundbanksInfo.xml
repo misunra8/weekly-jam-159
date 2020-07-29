@@ -76,6 +76,26 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="1404805401" Name="DoorOpen" ObjectPath="\Events\Default Work Unit\DoorOpen" DurationType="OneShot" DurationMin="0.370139" DurationMax="0.884577">
+					<IncludedMemoryFiles>
+						<File Id="174523660" Language="SFX">
+							<ShortName>qubodup-DoorOpen01.wav</ShortName>
+							<Path>SFX\qubodup-DoorOpen01_9F865583.wem</Path>
+						</File>
+						<File Id="764411919" Language="SFX">
+							<ShortName>qubodup-DoorClose06.wav</ShortName>
+							<Path>SFX\qubodup-DoorClose06_FE9629DF.wem</Path>
+						</File>
+						<File Id="854304745" Language="SFX">
+							<ShortName>qubodup-DoorClose07.wav</ShortName>
+							<Path>SFX\qubodup-DoorClose07_29CF8610.wem</Path>
+						</File>
+						<File Id="887911261" Language="SFX">
+							<ShortName>qubodup-DoorOpen02.wav</ShortName>
+							<Path>SFX\qubodup-DoorOpen02_97153A6A.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1419635814" Name="ThemePlay" ObjectPath="\Events\Default Work Unit\ThemePlay" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="23388992" Language="SFX">

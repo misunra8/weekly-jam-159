@@ -3,10 +3,11 @@
 	<UserProjectSettingsInfo>
 		<UserProjectSettings Name="" ID="{7E0845EC-C6F0-4905-9CDC-E9004583ADA7}">
 			<PropertyList>
-				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\misun\Desktop\Early Projects\Week159_Jam\jam sound assets\"/>
+				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\misun\Desktop\Early Projects\Week159_Jam\jam sound assets\qubodup-DoorSet\flac\"/>
 				<Property Name="Event Action List\{8C7A15F1-A66B-4B1B-8BE5-F70D980118A6}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{AAB7369C-AB26-46CB-AF15-D0A6DA63A886}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{E195BABE-5948-41C9-8902-9389787F1120}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{FFE49398-0761-4AA2-93DB-5284F823B4CE}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
 					<ValueList>
@@ -27,7 +28,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="wxfzi/8rsEqWgiZ/x7H9zw=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="gqOrLuso+0CAUV8rnbOgZQ=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="QTAvNuGPyk2H1Eo3SpqIsgF82M7/////FoU0wwHMLkCAYR5d65VBSwF82M7/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="FoU0wwHMLkCAYR5d65VBSwF8lcL/////QTAvNuGPyk2H1Eo3SpqIsgF8lcL/////"/>
 				<Property Name="Interactive Music\x64_{4C40B79D-7ABD-4247-9278-92106348657C} - SegmentEditorZoomInfo" Type="string" Value="AAAAAAAA8D8AAAAAAADwPwAAAAAAkGxAAAAAAAAA8D8AAAAAAKq8QAAAAAAAAHlA"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
@@ -45,6 +46,7 @@
 				<Property Name="Music Transition List\{8A74C495-E6EC-4531-B8E8-3F66CE8D973F}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{AFBC6705-5E8A-4D2E-BAD4-C23CB2A89397}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Music Transition List\{EDE3BF8D-F11F-4452-825F-40028432EE1F}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="PluginUserAcknowledge\iZotope Hybrid Reverb" Type="bool" Value="True"/>
 				<Property Name="ProjectExplorer\FirstVisible_10_1" Type="string" Value="{4C96B38B-3DB4-40C7-91C9-665510E38993}"/>
 				<Property Name="ProjectExplorer\FirstVisible_11_1" Type="string" Value="{23EC2DE3-3ED8-4B82-AC99-92E25F2E4C6B}"/>
 				<Property Name="ProjectExplorer\FirstVisible_1_1" Type="string" Value="{2388DAEA-9775-46C6-A2ED-C5222A397756}"/>

@@ -62,6 +62,7 @@ public class CustomerSpawner : MonoBehaviour {
     /// </summary>
     private void NewCustomer()
     {
+        AkSoundEngine.PostEvent("DoorOpen", gameObject);
         var customer = Instantiate(customerPrefab, transform.position, Quaternion.identity);
 
         // pair an empty
