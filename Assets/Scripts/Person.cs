@@ -149,5 +149,24 @@ public abstract class Person : MonoBehaviour
     /// </summary>
     /// <param name="selectedMaterial">Selection material</param>
     /// <returns>Reference to the selected person</returns>
-    public abstract Person OnClick(Material selectedMaterial);
+    public virtual Person Select(Material selectedMaterial)
+    {
+        GetComponentInChildren<SpriteRenderer>().material = selectedMaterial;
+        return this;
+    }
+
+    /// <summary>
+    /// Deselects the person
+    /// </summary>
+    public virtual Person Deselect(Material deselectedMaterial)
+    {
+        GetComponentInChildren<SpriteRenderer>().material = deselectedMaterial;
+        return this;
+    }
+
+    /// <summary>
+    /// When the game manager orders the person to move
+    /// </summary>
+    /// <param name="destination">Location on the scene</param>
+    public abstract void MoveTo(Vector3 destination);
 }

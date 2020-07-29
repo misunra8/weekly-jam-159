@@ -33,8 +33,19 @@ public class Employee : Person
         throw new System.NotImplementedException();
     }
 
-    public override Person OnClick(Material selectedMaterial)
+    public override Person Select(Material selectedMaterial)
     {
         throw new System.NotImplementedException();
+    }
+
+    public override void MoveTo(Vector3 destination)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public override Person Deselect(Material deselectedMaterial)
+    {
+        base.Deselect(deselectedMaterial);
+        return this;
     }
 }

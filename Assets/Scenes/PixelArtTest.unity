@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SelectedMaterial: {fileID: 2100000, guid: d49dff24ed6ecb94987c2b42a47318d9, type: 2}
+  DeselectedMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!4 &225204946
 Transform:
   m_ObjectHideFlags: 0
@@ -321,7 +322,7 @@ GameObject:
   - component: {fileID: 336801960}
   - component: {fileID: 336801962}
   - component: {fileID: 336801961}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Machines
   m_TagString: Untagged
   m_Icon: {fileID: 0}

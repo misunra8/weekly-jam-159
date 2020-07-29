@@ -39,13 +39,37 @@ public class Customer : Person
     }
 
     /// <summary>
-    /// Cursor clicked the customer
+    /// Cursor selected the customer
     /// </summary>
     /// <param name="selectedMaterial">Selection material</param>
-    public override Person OnClick(Material selectedMaterial)
+    public override Person Select(Material selectedMaterial)
     {
-        Debug.Log("clicked this");
-        GetComponentInChildren<SpriteRenderer>().material = selectedMaterial;
+        // change material
+        base.Select(selectedMaterial);
+
+        return this;
+    }
+
+    /// <summary>
+    /// Tell the customer to move to a place
+    /// </summary>
+    /// <param name="destination"></param>
+    public override void MoveTo(Vector3 destination)
+    {
+        // only moves when the customer is waiting in line
+
+        SetPathDestination(destination);
+    }
+
+    /// <summary>
+    /// Deselect the customer
+    /// </summary>
+    /// <param name="deselectedMaterial">Deselection material</param>
+    /// <returns></returns>
+    public override Person Deselect(Material deselectedMaterial)
+    {
+        // change material
+        base.Deselect(deselectedMaterial);
 
         return this;
     }

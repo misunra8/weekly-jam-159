@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,9 @@ public class GameManager : MonoBehaviour
     [Tooltip("Material of a selected person")]
     public Material SelectedMaterial;
 
+    [Tooltip("Material of a deselected person")]
+    public Material DeselectedMaterial;
+
     /// <summary>
     /// The selected person
     /// </summary>
@@ -19,6 +23,18 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         LeftClickListener();
+        SpaceBarListener();
+    }
+
+    /// <summary>
+    /// Listens to the space bar being lifted
+    /// </summary>
+    private void SpaceBarListener()
+    {
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            Deselect();
+        }
     }
 
     /// <summary>
@@ -27,16 +43,26 @@ public class GameManager : MonoBehaviour
     private void LeftClickListener()
     {
         // left click up 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonUp(0))
         {
+            // orders the selected unit to move
+            if (selectedUnit != null)
+            {
+                MovePerson();
+                Deselect();
+                return;
+            }
+
             Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
 
+            // collision detection
             RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
             if (hit.collider != null)
             {
                 LeftClickCollision(hit);
             }
+
         }
     }
 
@@ -46,24 +72,68 @@ public class GameManager : MonoBehaviour
     /// <param name="hit"></param>
     private void LeftClickCollision(RaycastHit2D hit)
     {
+        if (selectedUnit == null)
+            switch (hit.collider.gameObject.name)
+            {
+                case "Customer":
+                case "Customer(Clone)":
+                case "Employee":
+                case "Employee(Clone)":
+                    // select the person
+                    Select(hit.collider.GetComponent<Person>());
 
-        switch (hit.collider.gameObject.name)
+                    break;
+
+                case "Tables":
+                case "Wall":
+                case "Machines":
+                    break;
+            }
+        
+        // selected unit is told to go to a collidable
+        else
+            switch (hit.collider.gameObject.name)
+            {
+                case "Wall":
+                    break;
+
+                default:
+                    MovePerson();
+                    Deselect();
+                    break;
+            }
+    }
+
+    /// <summary>
+    /// Deselects the current unit
+    /// </summary>
+    private void Deselect()
+    {
+        if (selectedUnit != null)
         {
-            case "Customer":
-            case "Customer(Clone)":
-                selectedUnit = hit.collider.GetComponent<Customer>().OnClick(SelectedMaterial);
-                break;
-
-            case "Employee":
-            case "Employee(Clone)":
-
-                // change to the color of selection
-                selectedUnit = hit.collider.GetComponent<Employee>().OnClick(SelectedMaterial);
-
-                break;
-
-            case "Tables":
-                break;
+            selectedUnit.Deselect(DeselectedMaterial);
+            selectedUnit = null;
         }
+    }
+
+    /// <summary>
+    /// Selects a person
+    /// </summary>
+    /// <param name="person"></param>
+    private void Select(Person person)
+    {
+        selectedUnit = person.Select(SelectedMaterial);
+    }
+
+    /// <summary>
+    /// Orders the person to go to cursor location
+    /// </summary>
+    /// <param name="point">2d position on the screen</param>
+    private void MovePerson()
+    {
+        if (selectedUnit == null) throw new Exception("No unit selected to move");
+
+        Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        selectedUnit.MoveTo(worldPosition);
     }
 }
