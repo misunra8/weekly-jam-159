@@ -134,6 +134,7 @@ public class GameManager : MonoBehaviour
         if (selectedUnit == null) throw new Exception("No unit selected to move");
 
         Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        worldPosition.z = 0;
         selectedUnit.MoveTo(worldPosition);
     }
 }
