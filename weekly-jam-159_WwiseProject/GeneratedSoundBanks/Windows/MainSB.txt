@@ -2,6 +2,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1303789868	CoinPay			\Default Work Unit\CoinPay	
 	1404805401	DoorOpen			\Default Work Unit\DoorOpen	
 	1419635814	ThemePlay			\Default Work Unit\ThemePlay	
+	3841775605	Pouring			\Default Work Unit\Pouring	
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	4095641762	Theme_RTPC			\Default Work Unit\Theme_RTPC	
@@ -19,6 +20,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	150272906	chaching (2)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\chaching (2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CashRegister\chaching (2)		264820
 	174523660	qubodup-DoorOpen01	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\qubodup-DoorOpen01_9F865583.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpen\qubodup-DoorOpen01		105784
 	188942863	zipperA (4)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\zipperA (4)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\Zipper\zipperA (4)		67812
+	192499742	pouring (1)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\pouring (1)_B171BA87.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pouring\pouring (1)		374824
 	206032748	theme_flutes	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\theme_flutes_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_flutes		6158028
 	353829220	coinLong (4)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\coinLong (4)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (4)		224100
 	366793873	coinLong (7)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\coinLong (7)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (7)		155304
@@ -26,6 +28,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	575118842	zipperA (1)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\zipperA (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\Zipper\zipperA (1)		91388
 	607650258	theme_keys	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\theme_keys_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_keys		6158028
 	630560050	theme_pizz_high	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\theme_pizz_high_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_pizz_high		6158028
+	698729837	pouring (2)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\pouring (2)_F56576D6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pouring\pouring (2)		726684
 	764411919	qubodup-DoorClose06	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\qubodup-DoorClose06_FE9629DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpen\qubodup-DoorClose06		130648
 	765882545	coinLong (1)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\coinLong (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (1)		229416
 	833060530	zipperA (2)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Windows\SFX\zipperA (2)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\Zipper\zipperA (2)		88672

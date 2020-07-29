@@ -96,6 +96,18 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3841775605" Name="Pouring" ObjectPath="\Events\Default Work Unit\Pouring" DurationType="OneShot" DurationMin="3.784477" DurationMax="3.903744">
+					<IncludedMemoryFiles>
+						<File Id="192499742" Language="SFX">
+							<ShortName>pouring (1).wav</ShortName>
+							<Path>SFX\pouring (1)_B171BA87.wem</Path>
+						</File>
+						<File Id="698729837" Language="SFX">
+							<ShortName>pouring (2).wav</ShortName>
+							<Path>SFX\pouring (2)_F56576D6.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1419635814" Name="ThemePlay" ObjectPath="\Events\Default Work Unit\ThemePlay" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="23388992" Language="SFX">

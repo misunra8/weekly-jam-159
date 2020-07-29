@@ -18,4 +18,9 @@ public class Employee : MonoBehaviour
         
     }
 
+    private void OnMouseDown() {
+        AkSoundEngine.PostEvent("Pouring", gameObject);
+        AkSoundEngine.SetRTPCValue("Theme_RTPC", 40);
+    }
+
 }

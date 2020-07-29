@@ -1500,6 +1500,73 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<RandomSequenceContainer Name="Pouring" ID="{B323E3CF-3FF4-4A7E-9F89-99F7F759C4D1}" ShortID="971632306">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="pouring (1)" ID="{BC0BC55A-ECF2-4151-B0DD-E43BA8389819}" ShortID="158984264">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pouring (1)" ID="{3D19CA15-0AD2-408B-985C-DE06277558EE}">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.2675684624018"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.903743453049"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>pouring (1).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="192499742"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pouring (1)" ID="{3D19CA15-0AD2-408B-985C-DE06277558EE}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="pouring (2)" ID="{590BBDAC-471E-40B4-93E9-57848C260C76}" ShortID="663657797">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="pouring (2)" ID="{37823F46-EB35-4911-B288-AA2E3C9A5197}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="1.5686162083801"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="1.72090904414516"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimEnd" Type="Real64" Value="3.78447696876168"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>pouring (2).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="698729837"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="pouring (2)" ID="{37823F46-EB35-4911-B288-AA2E3C9A5197}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

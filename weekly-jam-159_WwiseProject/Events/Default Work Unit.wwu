@@ -36,6 +36,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Pouring" ID="{7290DB14-B914-40B7-A4D3-7EAFD4E8BCC0}">
+					<ChildrenList>
+						<Action Name="" ID="{FBDE532D-8A7C-4C2A-9EA3-9414908A8603}" ShortID="107399995">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Pouring" ID="{B323E3CF-3FF4-4A7E-9F89-99F7F759C4D1}" WorkUnitID="{638493B3-4342-4AA6-A351-A5A3D2BE5F90}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
