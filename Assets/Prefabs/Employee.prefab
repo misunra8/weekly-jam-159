@@ -165,6 +165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e997bac23877524682915450bf05197, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollisionStep: 0.5
+  pathSetter: {fileID: 5922967835326850624}
+  behavior: {fileID: 1452085093598691485}
 --- !u!95 &1452085093598691485
 Animator:
   serializedVersion: 3
