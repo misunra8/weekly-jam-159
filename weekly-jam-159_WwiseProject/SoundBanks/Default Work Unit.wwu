@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="Pouring" ID="{7290DB14-B914-40B7-A4D3-7EAFD4E8BCC0}" WorkUnitID="{FD70B87B-105F-4382-A98F-7FAFDE2EDEBC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="CoinPay" ID="{E195BABE-5948-41C9-8902-9389787F1120}" WorkUnitID="{FD70B87B-105F-4382-A98F-7FAFDE2EDEBC}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="DialogueRegister" ID="{10B2A7C1-FCEF-4400-BBE5-3C4B31C8B8B3}" WorkUnitID="{FD70B87B-105F-4382-A98F-7FAFDE2EDEBC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Bell" ID="{8896B4BF-AACB-460D-A0B6-CD7112D8DB3E}" WorkUnitID="{FD70B87B-105F-4382-A98F-7FAFDE2EDEBC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="DoorOpen" ID="{FFE49398-0761-4AA2-93DB-5284F823B4CE}" WorkUnitID="{FD70B87B-105F-4382-A98F-7FAFDE2EDEBC}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ThemePlay" ID="{8C7A15F1-A66B-4B1B-8BE5-F70D980118A6}" WorkUnitID="{FD70B87B-105F-4382-A98F-7FAFDE2EDEBC}" Origin="Manual" Filter="7"/>

@@ -21,8 +21,8 @@ public class Employee : Person
     }
 
     private void OnMouseDown() {
-        //AkSoundEngine.PostEvent("Pouring", gameObject);
-        //AkSoundEngine.SetRTPCValue("Theme_RTPC", 40);
+        AkSoundEngine.PostEvent("DialogueRegister", gameObject);
+        AkSoundEngine.SetRTPCValue("Theme_RTPC", 40);
     }
 
     protected override void ActOnMachineCollision(Vector3Int cell)

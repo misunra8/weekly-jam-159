@@ -1621,6 +1621,283 @@
 						<ActiveSource Name="bell" ID="{5DAD1116-F3D7-4E48-8A41-F4B81722BE21}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="DialogueRegister" ID="{3B00F26A-690A-4EE9-A1F2-71BD08C9AD1C}" ShortID="1050754517">
+					<PropertyList>
+						<Property Name="Lowpass" Type="int16">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{E95CDE21-C15A-481E-AB1C-FB57DFC86338}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{7F022A28-625D-415A-BA4E-93E0205F4A47}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+						<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="DialogueGibberish" ID="{EA38C831-5CEB-400C-A9D1-87B22F354B4B}" ShortID="419050462">
+							<PropertyList>
+								<Property Name="NormalOrShuffle" Type="int16" Value="0"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A762410F-1933-470E-BC86-2D4E527F26FF}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="379"/>
+													<Property Name="Min" Type="Real64" Value="-328"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="gibberish (2)" ID="{4AC07880-1457-43CE-A07F-27F4008CB647}" ShortID="446293888">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gibberish (2)" ID="{C50E469F-6CAC-42B4-BC18-5D7B8EC951EE}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="0.723842404900606"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimEnd" Type="Real64" Value="2.42916603678508"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gibberish (2).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="29729775"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gibberish (2)" ID="{C50E469F-6CAC-42B4-BC18-5D7B8EC951EE}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="gibberish (2)_01" ID="{0991EE67-09FA-4E60-B75E-8D2C5E753179}" ShortID="267775656">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gibberish (2)" ID="{D7E4C4C2-3FDA-4C44-B21E-F2E78A1AF983}">
+											<PropertyList>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.72986066255908"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="2.64999931285646"/>
+												<Property Name="TrimEnd" Type="Real64" Value="6.03610954595082"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gibberish (2).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="727419285"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gibberish (2)" ID="{D7E4C4C2-3FDA-4C44-B21E-F2E78A1AF983}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="gibberish (2)_02" ID="{48927023-E5B9-4B32-A114-F5745EBF2D8B}" ShortID="930851423">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="gibberish (2)" ID="{171B3A29-A841-4037-BFE4-8960957E7B78}">
+											<PropertyList>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.527546159503832"/>
+												<Property Name="FadeOutDuration" Type="Real64" Value="1.66851808587258"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+												<Property Name="TrimBegin" Type="Real64" Value="6.45323906741896"/>
+												<Property Name="TrimEnd" Type="Real64" Value="9.18911798763651"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>gibberish (2).wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="432928169"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="gibberish (2)" ID="{171B3A29-A841-4037-BFE4-8960957E7B78}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="gibberish (3)" ID="{C1ECB437-3CB8-4B2F-B11B-198314B3FD5F}" ShortID="302499476">
+							<PropertyList>
+								<Property Name="Lowpass" Type="int16">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{A3C7CC9A-CE4B-4D8A-BB62-D0251B05ADA0}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="49"/>
+													<Property Name="Min" Type="Real64" Value="-37"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{502AF30E-C1B9-49D2-9917-5E0F7BCA07A4}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="480"/>
+													<Property Name="Min" Type="Real64" Value="-354"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="gibberish (3)" ID="{53047956-28C6-4F20-9102-81D3B6594A81}">
+									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="0.0853977161384569"/>
+										<Property Name="FadeOutDuration" Type="Real64" Value="0.133394972654232"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+										<Property Name="TrimBegin" Type="Real64" Value="0.104097945949798"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>gibberish (3).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="921700915"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="gibberish (3)" ID="{53047956-28C6-4F20-9102-81D3B6594A81}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="gibberish (1)" ID="{0B1CAD01-51E7-4A7C-AB29-C5FE33F9E224}" ShortID="356105048">
+							<PropertyList>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="Pitch" Type="int32">
+									<ValueList>
+										<Value>-680</Value>
+									</ValueList>
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{23E5E73B-B5C8-48A2-B715-4F6CC0971D2C}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="177"/>
+													<Property Name="Min" Type="Real64" Value="-404"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="Effect0">
+									<Custom>
+										<Effect Name="Wwise_Time_Stretch_(Custom)" ID="{537C3FC3-A4F1-4DAF-A814-F6474D7E4BE2}" ShortID="691154673" PluginName="Wwise Time Stretch" CompanyID="0" PluginID="130" PluginType="3">
+											<PropertyList>
+												<Property Name="TimeStretch" Type="Real32" Value="69"/>
+												<Property Name="TimeStretchRandom" Type="Real32" Value="9"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="gibberish (1)" ID="{A352961A-DBCF-4C81-9C4C-26ECA4B4B477}">
+									<Language>SFX</Language>
+									<AudioFile>gibberish (1).wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="743340238"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="gibberish (1)" ID="{A352961A-DBCF-4C81-9C4C-26ECA4B4B477}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Silence" ID="{7317BF88-5947-468E-A5C3-40DD40B1D740}" ShortID="531948428">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{17CD629E-DA26-43D6-AF52-3861E5FBA77E}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{BC4ABD83-5930-4BD1-A609-5BC6F28B40DF}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<SourcePlugin Name="Wwise Silence" ID="{92699E9A-E954-4A1D-9E12-810446A10F54}" ShortID="56189312" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+									<PropertyList>
+										<Property Name="Length" Type="Real32" Value="0.2"/>
+									</PropertyList>
+									<Language>SFX</Language>
+								</SourcePlugin>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Wwise Silence" ID="{92699E9A-E954-4A1D-9E12-810446A10F54}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+					<Playlist>
+						<ItemRef Name="gibberish (1)" ID="{0B1CAD01-51E7-4A7C-AB29-C5FE33F9E224}"/>
+						<ItemRef Name="Silence" ID="{7317BF88-5947-468E-A5C3-40DD40B1D740}"/>
+						<ItemRef Name="DialogueGibberish" ID="{EA38C831-5CEB-400C-A9D1-87B22F354B4B}"/>
+						<ItemRef Name="Silence" ID="{7317BF88-5947-468E-A5C3-40DD40B1D740}"/>
+						<ItemRef Name="gibberish (3)" ID="{C1ECB437-3CB8-4B2F-B11B-198314B3FD5F}"/>
+					</Playlist>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
