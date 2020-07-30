@@ -133,11 +133,43 @@ public class Customer : Person
         switch (bubble)
         {
             case BubbleSprite.None:
-                
+                Bubble.sprite = null;
+                break;
+
+            case BubbleSprite.Cash:
+                Bubble.sprite = cashCollectionBubble;
+                break;
+            
+            case BubbleSprite.Machine:
+                Bubble.sprite = cashRegisterBubble;
+                break;
+            
+            case BubbleSprite.Table:
+                Bubble.sprite = tableBubble;
                 break;
             
             default:
                 break;
         }
+    }
+
+    /// <summary>
+    /// Does nothing
+    /// </summary>
+    /// <param name="cell"></param>
+    /// <param name="machineManager"></param>
+    protected override void ActOnExitMachineCollision(Vector3Int cell, MachineManager machineManager)
+    {
+        
+    }
+
+    /// <summary>
+    /// Does nothing
+    /// </summary>
+    /// <param name="cell"></param>
+    /// <param name="machineManager"></param>
+    protected override void ActOnExitTableCollision(Vector3Int cell, MachineManager machineManager)
+    {
+        
     }
 }

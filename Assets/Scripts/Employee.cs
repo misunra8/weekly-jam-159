@@ -9,8 +9,7 @@ using UnityEngine;
 public class Employee : Person
 {
     [Tooltip("An empty that helps in navigating")]
-    [SerializeField]
-    protected new GameObject pairedEmpty;
+    public GameObject employeePairedEmpty;
 
     private uint walkEvent;
     // Start is called before the first frame update
@@ -18,7 +17,7 @@ public class Employee : Person
     void Start()
     {
         // push up the pairedEmpty attribute
-        base.pairedEmpty = this.pairedEmpty;
+        base.pairedEmpty = this.employeePairedEmpty;
 
         float themeRTPC = 90;
         AkSoundEngine.SetRTPCValue("Theme_RTPC", themeRTPC);
@@ -82,6 +81,21 @@ public class Employee : Person
     /// When the employee takes an order
     /// </summary>
     public void TookOrder()
+    {
+        throw new NotImplementedException();
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="cell"></param>
+    /// <param name="machineManager"></param>
+    protected override void ActOnExitMachineCollision(Vector3Int cell, MachineManager machineManager)
+    {
+        throw new NotImplementedException();
+    }
+
+    protected override void ActOnExitTableCollision(Vector3Int cell, MachineManager machineManager)
     {
         throw new NotImplementedException();
     }

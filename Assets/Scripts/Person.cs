@@ -215,4 +215,43 @@ public abstract class Person : MonoBehaviour
     /// </summary>
     /// <param name="destination">Location on the scene</param>
     public abstract void MoveTo(Vector3 destination);
+
+    /// <summary>
+    /// Standard Unity listener
+    /// </summary>
+    /// <param name="other"></param>
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        switch (other.gameObject.name)
+        {
+
+            // exit collision with something in the tables tilemap
+            case "Tables":
+                ExitTableCollision(other);
+                break;
+
+            case "Machines":
+                ExitMachineCollision(other);
+                break;
+        }
+    }
+
+
+    private void ExitMachineCollision(Collision2D other)
+    {
+        var cell = GetCollisionCell(other);
+
+        ActOnExitMachineCollision(cell, other.collider.GetComponent<MachineManager>());
+    }
+
+    protected abstract void ActOnExitMachineCollision(Vector3Int cell, MachineManager machineManager);
+
+    private void ExitTableCollision(Collision2D other)
+    {
+        var cell = GetCollisionCell(other);
+
+        ActOnExitTableCollision(cell, other.collider.GetComponent<MachineManager>());
+    }
+
+    protected abstract void ActOnExitTableCollision(Vector3Int cell, MachineManager machineManager);
 }

@@ -9,6 +9,7 @@ public class CustomerWalkToTable : StateMachineBehaviour
     {
         var customer = animator.GetComponent<Customer>();
         customer.CanWalk = true;
+        customer.DisplayBubble(Customer.BubbleSprite.Table);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

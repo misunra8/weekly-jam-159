@@ -18,6 +18,7 @@ public class CustomerWaitInLine : StateMachineBehaviour
         // to get the script of the gameobject in the scene with this animator
         var customer = animator.GetComponent<Customer>();
         customer.CanWalk = true;
+        customer.DisplayBubble(Customer.BubbleSprite.Machine);
         // animator.GetComponent<Customer>().PlaySoundOfWaitingInLine();
     }
 
