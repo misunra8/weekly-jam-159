@@ -44,6 +44,14 @@ public abstract class Person : MonoBehaviour
     [Tooltip("Used to see if the agent arrived at the A* target")]
     public float PathArrivalThreshold = 0.15f;
 
+    /// <summary>
+    /// Flag controlled by the state machine telling whether the person can walk
+    /// </summary>
+    [NonSerialized]
+    public bool CanWalk = true;
+
+    [Tooltip("Sprite renderer of the character sprite")]
+    public SpriteRenderer spriteRenderer;
 
     private void Start()
     {
@@ -98,14 +106,14 @@ public abstract class Person : MonoBehaviour
         Vector3Int cell = GetCollisionCell(other);
 
         // custom action on the collided machine
-        ActOnMachineCollision(cell);
+        ActOnMachineCollision(cell, other.collider.GetComponent<MachineManager>());
     }
 
     /// <summary>
     /// Method of what to do when colliding with a machine
     /// </summary>
     /// <param name="cell"></param>
-    protected abstract void ActOnMachineCollision(Vector3Int cell);
+    protected abstract void ActOnMachineCollision(Vector3Int cell, MachineManager machine);
 
     /// <summary>
     /// Triggers an interaction between the person and the table
@@ -189,7 +197,7 @@ public abstract class Person : MonoBehaviour
     /// <returns>Reference to the selected person</returns>
     public virtual Person Select(Material selectedMaterial)
     {
-        GetComponentInChildren<SpriteRenderer>().material = selectedMaterial;
+        transform.GetChild(0).GetComponent<SpriteRenderer>().material = selectedMaterial;
         return this;
     }
 
@@ -198,7 +206,7 @@ public abstract class Person : MonoBehaviour
     /// </summary>
     public virtual Person Deselect(Material deselectedMaterial)
     {
-        GetComponentInChildren<SpriteRenderer>().material = deselectedMaterial;
+        transform.GetChild(0).GetComponent<SpriteRenderer>().material = deselectedMaterial;
         return this;
     }
 
