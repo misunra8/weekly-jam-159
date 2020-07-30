@@ -84,7 +84,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="916136552" Name="DialogueRegister" ObjectPath="\Events\Default Work Unit\DialogueRegister" DurationType="OneShot" DurationMin="3.826857" DurationMax="6.631337">
+				<Event Id="916136552" Name="DialogueRegister" ObjectPath="\Events\Default Work Unit\DialogueRegister" DurationType="OneShot" DurationMin="3.794595" DurationMax="6.586209">
 					<IncludedMemoryFiles>
 						<File Id="29729775" Language="SFX">
 							<ShortName>gibberish (2).wav</ShortName>
