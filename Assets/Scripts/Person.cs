@@ -44,6 +44,14 @@ public abstract class Person : MonoBehaviour
     [Tooltip("Used to see if the agent arrived at the A* target")]
     public float PathArrivalThreshold = 0.15f;
 
+    /// <summary>
+    /// Flag controlled by the state machine telling whether the person can walk
+    /// </summary>
+    [NonSerialized]
+    public bool CanWalk = true;
+
+    [Tooltip("Sprite renderer of the character sprite")]
+    public SpriteRenderer spriteRenderer;
 
     private void Start()
     {
@@ -189,7 +197,7 @@ public abstract class Person : MonoBehaviour
     /// <returns>Reference to the selected person</returns>
     public virtual Person Select(Material selectedMaterial)
     {
-        GetComponentInChildren<SpriteRenderer>().material = selectedMaterial;
+        transform.GetChild(0).GetComponent<SpriteRenderer>().material = selectedMaterial;
         return this;
     }
 
@@ -198,7 +206,7 @@ public abstract class Person : MonoBehaviour
     /// </summary>
     public virtual Person Deselect(Material deselectedMaterial)
     {
-        GetComponentInChildren<SpriteRenderer>().material = deselectedMaterial;
+        transform.GetChild(0).GetComponent<SpriteRenderer>().material = deselectedMaterial;
         return this;
     }
 

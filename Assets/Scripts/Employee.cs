@@ -1,33 +1,52 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Script controlling how a customer behaves
+/// </summary>
 public class Employee : Person
 {
+    [Tooltip("An empty that helps in navigating")]
+    [SerializeField]
+    protected new GameObject pairedEmpty;
 
     private uint walkEvent;
     // Start is called before the first frame update
+    
     void Start()
     {
+        // push up the pairedEmpty attribute
+        base.pairedEmpty = this.pairedEmpty;
+
         float themeRTPC = 90;
         AkSoundEngine.SetRTPCValue("Theme_RTPC", themeRTPC);
-        AkSoundEngine.PostEvent("ThemePlay",gameObject);
+        AkSoundEngine.PostEvent("ThemePlay", gameObject);
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnMouseDown()
     {
-        
-    }
-
-    private void OnMouseDown() {
         AkSoundEngine.PostEvent("DialogueRegister", gameObject);
         AkSoundEngine.SetRTPCValue("Theme_RTPC", 40);
     }
 
+    /// <summary>
+    /// When the employee collides with a machine counter
+    /// </summary>
+    /// <param name="cell">Cell position of the collision</param>
+    /// <param name="machine"></param>
     protected override void ActOnMachineCollision(Vector3Int cell, MachineManager machine)
     {
-        throw new System.NotImplementedException();
+        // check for machine availability
+        if (!machine.IsAvailableForEmployee(cell)) return;
+
+        // triggers behavior states
+        behavior.SetTrigger("Operate cash register");
+
+        // interact with the machine
+        machine.EmployeeCollision(cell, this);
+
     }
 
     protected override void ActOnTableCollision(Vector3Int cell)
@@ -35,16 +54,35 @@ public class Employee : Person
         throw new System.NotImplementedException();
     }
 
+    /// <summary>
+    /// Tell the employee to move somewhere
+    /// </summary>
+    /// <param name="destination"></param>
     public override void MoveTo(Vector3 destination)
     {
-        throw new System.NotImplementedException();
-        //AkSoundEngine.StopPlayingID(walkEvent);
-        //walkEvent = AkSoundEngine.PostEvent("Walk", gameObject);
+        // only walk when allowed to by the state machine
+        if (CanWalk)
+        {
+            AkSoundEngine.StopPlayingID(walkEvent);
+            walkEvent = AkSoundEngine.PostEvent("Walk", gameObject);
+            SetPathDestination(destination);
+        }
+
     }
 
-    public override void StoppedMoving() {
+    /// <summary>
+    /// When the employee stops moving
+    /// </summary>
+    public override void StoppedMoving()
+    {
+        AkSoundEngine.StopPlayingID(walkEvent);
+    }
 
-        throw new System.NotImplementedException();
-        //AkSoundEngine.StopPlayingID(walkEvent);
+    /// <summary>
+    /// When the employee takes an order
+    /// </summary>
+    public void TookOrder()
+    {
+        throw new NotImplementedException();
     }
 }

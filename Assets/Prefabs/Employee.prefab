@@ -168,6 +168,8 @@ MonoBehaviour:
   CollisionStep: 0.5
   pathSetter: {fileID: 5922967835326850624}
   behavior: {fileID: 1452085093598691485}
+  PathArrivalThreshold: 0.15
+  spriteRenderer: {fileID: 7858156230158774972}
 --- !u!95 &1452085093598691485
 Animator:
   serializedVersion: 3

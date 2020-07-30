@@ -2,18 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Pathfinding;
 
 /// <summary>
 /// Script dictating how a customer interacts
 /// </summary>
 public class Customer : Person
 {
-    /// <summary>
-    /// Flag telling if the customer can walk anywhere
-    /// </summary>
-    [NonSerialized]
-    public bool CanWalk = true;
 
     /// <summary>
     /// For audio
@@ -31,6 +25,28 @@ public class Customer : Person
     /// </summary>
     [NonSerialized]
     public Vector3Int WaitingSpot;
+
+    [Tooltip("Sprite of a cash register in a bubble")]
+    public Sprite cashRegisterBubble;
+
+    [Tooltip("Sprite of a cash symbol in a bubble")]
+    public Sprite cashCollectionBubble;
+
+    [Tooltip("Sprite of a table in a bubble")]
+    public Sprite tableBubble;
+
+    [Tooltip("Sprite renderer of the bubble")]
+    public SpriteRenderer Bubble;
+
+    /// <summary>
+    /// Used to decide which sprite to display as a bubble
+    /// </summary>
+    public enum BubbleSprite {
+        None,
+        Machine,
+        Table,
+        Cash
+    }
 
     private void OnMouseDown() {
         //AkSoundEngine.PostEvent("CoinPay",gameObject);
@@ -64,7 +80,7 @@ public class Customer : Person
         WaitingArea.LeaveLine(WaitingSpot);
 
         // interact with machine
-        machine.CustomerCollision(cell);
+        machine.CustomerCollision(cell, this);
     }
 
     /// <summary>
@@ -92,8 +108,36 @@ public class Customer : Person
         }
     }
 
+    /// <summary>
+    /// When the customer stops moving
+    /// </summary>
     public override void StoppedMoving() {
         AkSoundEngine.StopPlayingID(walkEvent);
     }
 
+    /// <summary>
+    /// Placed an order
+    /// </summary>
+    public void PlacedOrder()
+    {
+        // now can walk to table
+        behavior.SetTrigger("Walk to table");
+    }
+
+    /// <summary>
+    /// Display a bubble sprite next to the customer
+    /// </summary>
+    /// <param name="bubble"></param>
+    public void DisplayBubble(BubbleSprite bubble)
+    {
+        switch (bubble)
+        {
+            case BubbleSprite.None:
+                
+                break;
+            
+            default:
+                break;
+        }
+    }
 }
