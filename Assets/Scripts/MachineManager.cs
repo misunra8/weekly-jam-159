@@ -49,12 +49,33 @@ public class MachineManager : MonoBehaviour
     }
 
     /// <summary>
-    /// Customer comes to the machine counter
+    /// Customer is accepted at the machine counter
     /// </summary>
-    /// <param name="cell"></param>
+    /// <param name="cell">Cell position of the machine</param>
+
     public void CustomerCollision(Vector3Int cell)
     {
         
+
+    }
+
+    
+    /// <summary>
+    /// Determines if the machine at cell is availabe for the customer
+    /// </summary>
+    /// <param name="cell"></param>
+    /// <returns>Whether they are allowed to be served, one customer per machine</returns>
+    public bool IsAvailableForCustomer(Vector3Int cell)
+    {
+        switch (availabilities[cell])
+        {
+            case Status.Free:
+            case Status.EmployeeIdle:
+                return true;
+
+            default:
+                return false;
+        }
     }
 
 

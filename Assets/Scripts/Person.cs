@@ -98,14 +98,14 @@ public abstract class Person : MonoBehaviour
         Vector3Int cell = GetCollisionCell(other);
 
         // custom action on the collided machine
-        ActOnMachineCollision(cell);
+        ActOnMachineCollision(cell, other.collider.GetComponent<MachineManager>());
     }
 
     /// <summary>
     /// Method of what to do when colliding with a machine
     /// </summary>
     /// <param name="cell"></param>
-    protected abstract void ActOnMachineCollision(Vector3Int cell);
+    protected abstract void ActOnMachineCollision(Vector3Int cell, MachineManager machine);
 
     /// <summary>
     /// Triggers an interaction between the person and the table

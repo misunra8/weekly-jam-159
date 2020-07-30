@@ -25,7 +25,7 @@ public class Employee : Person
         AkSoundEngine.SetRTPCValue("Theme_RTPC", 40);
     }
 
-    protected override void ActOnMachineCollision(Vector3Int cell)
+    protected override void ActOnMachineCollision(Vector3Int cell, MachineManager machine)
     {
         throw new System.NotImplementedException();
     }
@@ -35,22 +35,11 @@ public class Employee : Person
         throw new System.NotImplementedException();
     }
 
-    public override Person Select(Material selectedMaterial)
-    {
-        throw new System.NotImplementedException();
-    }
-
     public override void MoveTo(Vector3 destination)
     {
         throw new System.NotImplementedException();
         //AkSoundEngine.StopPlayingID(walkEvent);
         //walkEvent = AkSoundEngine.PostEvent("Walk", gameObject);
-    }
-
-    public override Person Deselect(Material deselectedMaterial)
-    {
-        base.Deselect(deselectedMaterial);
-        return this;
     }
 
     public override void StoppedMoving() {

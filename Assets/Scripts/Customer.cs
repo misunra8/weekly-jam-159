@@ -51,13 +51,19 @@ public class Customer : Person
     /// Requests service at the counter, leave the line
     /// </summary>
     /// <param name="cell">Cell of the collided counter</param>
-    protected override void ActOnMachineCollision(Vector3Int cell)
+    /// <param name="machine">Script of the machine counter</param>
+    protected override void ActOnMachineCollision(Vector3Int cell, MachineManager machine)
     {
+        // check for machine availability
+        if (!machine.IsAvailableForCustomer(cell)) return;
+
         // free up the line, change behavior state
-        print("machine collision");
         AkSoundEngine.PostEvent("Bell", gameObject);
         behavior.SetTrigger("Leave line");
         WaitingArea.LeaveLine(WaitingSpot);
+
+        // interact with machine
+        machine.CustomerCollision(cell);
     }
 
     /// <summary>
