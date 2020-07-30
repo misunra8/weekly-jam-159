@@ -54,7 +54,7 @@ public class Customer : Person
     protected override void ActOnMachineCollision(Vector3Int cell)
     {
         // free up the line, change behavior state
-        print("machine collision");
+        AkSoundEngine.StopPlayingID(walkEvent);
         AkSoundEngine.PostEvent("Bell", gameObject);
         behavior.SetTrigger("Leave line");
         WaitingArea.LeaveLine(WaitingSpot);
