@@ -2865,6 +2865,11 @@ PrefabInstance:
       propertyPath: pairedEmpty
       value: 
       objectReference: {fileID: 1054624671}
+    - target: {fileID: 5248568980379020161, guid: 349e1be59f6b4c6428eb22927570557f,
+        type: 3}
+      propertyPath: employeePairedEmpty
+      value: 
+      objectReference: {fileID: 1054624671}
     - target: {fileID: 5922967835326850624, guid: 349e1be59f6b4c6428eb22927570557f,
         type: 3}
       propertyPath: target

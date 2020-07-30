@@ -9,6 +9,7 @@ public class CustomerWaitAtTable : StateMachineBehaviour
     {
         var customer = animator.GetComponent<Customer>();
         customer.CanWalk = false;
+        customer.DisplayBubble(Customer.BubbleSprite.None);
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks

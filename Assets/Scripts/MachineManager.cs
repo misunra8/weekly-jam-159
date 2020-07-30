@@ -199,4 +199,44 @@ public class MachineManager : MonoBehaviour
                 throw new System.Exception($"Inappriopriate serving machine state: {availabilities[cell]}");
         }
     }
+
+    /// <summary>
+    /// Free up the cell from the employee
+    /// </summary>
+    /// <param name="cell"></param>
+    /// <param name="employee"></param>
+    public void EmployeeExitCollision(Vector3Int cell, Employee employee)
+    {
+        (Customer customer, Employee employee) people = (null, null);
+        switch (availabilities[cell])
+        {
+            case Status.EmployeeIdle:
+                availabilities[cell] = Status.Free;
+                people = users[cell];
+                people.employee = null;
+                users[cell] = people;
+                break;
+
+            case Status.CoffeeReady:
+                availabilities[cell] = Status.Free;
+                people = users[cell];
+                people.employee = null;
+                users[cell] = people;
+                // take coffee
+                TakeCoffee(cell, employee);
+                break;
+
+            case Status.CustomerIdle:
+            case Status.Ordering:
+                throw new System.Exception($"Employee cannot leave machine while serving a customer");
+            
+            default:
+                break;
+        }
+    }
+
+    private void TakeCoffee(Vector3Int cell, Employee employee)
+    {
+        throw new NotImplementedException();
+    }
 }
