@@ -69,6 +69,17 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="DialogueRegister" ID="{10B2A7C1-FCEF-4400-BBE5-3C4B31C8B8B3}">
+					<ChildrenList>
+						<Action Name="" ID="{8971C97E-391A-4605-ACE4-D9B0DBC4AB73}" ShortID="318864226">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="DialogueRegister" ID="{3B00F26A-690A-4EE9-A1F2-71BD08C9AD1C}" WorkUnitID="{638493B3-4342-4AA6-A351-A5A3D2BE5F90}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

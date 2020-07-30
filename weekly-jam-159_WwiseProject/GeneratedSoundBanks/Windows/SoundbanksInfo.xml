@@ -84,6 +84,30 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="916136552" Name="DialogueRegister" ObjectPath="\Events\Default Work Unit\DialogueRegister" DurationType="OneShot" DurationMin="3.794595" DurationMax="6.586209">
+					<IncludedMemoryFiles>
+						<File Id="29729775" Language="SFX">
+							<ShortName>gibberish (2).wav</ShortName>
+							<Path>SFX\gibberish (2)_EC3E1988.wem</Path>
+						</File>
+						<File Id="432928169" Language="SFX">
+							<ShortName>gibberish (2).wav</ShortName>
+							<Path>SFX\gibberish (2)_6E90C1DF.wem</Path>
+						</File>
+						<File Id="727419285" Language="SFX">
+							<ShortName>gibberish (2).wav</ShortName>
+							<Path>SFX\gibberish (2)_2C4F093A.wem</Path>
+						</File>
+						<File Id="743340238" Language="SFX">
+							<ShortName>gibberish (1).wav</ShortName>
+							<Path>SFX\gibberish (1)_10C4C929.wem</Path>
+						</File>
+						<File Id="921700915" Language="SFX">
+							<ShortName>gibberish (3).wav</ShortName>
+							<Path>SFX\gibberish (3)_9B20ABFC.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1404805401" Name="DoorOpen" ObjectPath="\Events\Default Work Unit\DoorOpen" DurationType="OneShot" DurationMin="0.370139" DurationMax="0.884577">
 					<IncludedMemoryFiles>
 						<File Id="174523660" Language="SFX">

@@ -58,6 +58,7 @@ public class Customer : Person
         if (!machine.IsAvailableForCustomer(cell)) return;
 
         // free up the line, change behavior state
+        AkSoundEngine.StopPlayingID(walkEvent);
         AkSoundEngine.PostEvent("Bell", gameObject);
         behavior.SetTrigger("Leave line");
         WaitingArea.LeaveLine(WaitingSpot);

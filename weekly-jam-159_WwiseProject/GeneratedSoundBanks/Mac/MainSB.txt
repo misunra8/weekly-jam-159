@@ -1,4 +1,5 @@
 Event	ID	Name			Wwise Object Path	Notes
+	916136552	DialogueRegister			\Default Work Unit\DialogueRegister	
 	1240512178	Bell			\Default Work Unit\Bell	
 	1303789868	CoinPay			\Default Work Unit\CoinPay	
 	1404805401	DoorOpen			\Default Work Unit\DoorOpen	
@@ -9,8 +10,15 @@ Event	ID	Name			Wwise Object Path	Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	4095641762	Theme_RTPC			\Default Work Unit\Theme_RTPC	
 
+Effect plug-ins	ID	Name	Type				Notes
+	691154673	Wwise_Time_Stretch_(Custom)	Wwise Time Stretch			
+
+Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
+	56189312	Wwise Silence	Wwise Silence		\Actor-Mixer Hierarchy\Default Work Unit\DialogueRegister\Silence\Wwise Silence	
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	23388992	theme_spic_bass	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\theme_spic_bass_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_spic_bass		6158028
+	29729775	gibberish (2)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\gibberish (2)_EC3E1988.wem		\Actor-Mixer Hierarchy\Default Work Unit\DialogueRegister\DialogueGibberish\gibberish (2)		428568
 	34831605	coinLong (3)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\coinLong (3)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (3)		144744
 	56555761	coinLong (6)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\coinLong (6)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (6)		197648
 	65327589	chaching	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\chaching_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CashRegister\chaching		260696
@@ -24,11 +32,14 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	219183969	Walk	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\footsteps-4_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Walk		479296
 	353829220	coinLong (4)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\coinLong (4)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (4)		224100
 	366793873	coinLong (7)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\coinLong (7)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (7)		155304
+	432928169	gibberish (2)_02	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\gibberish (2)_6E90C1DF.wem		\Actor-Mixer Hierarchy\Default Work Unit\DialogueRegister\DialogueGibberish\gibberish (2)_02		482672
 	540316767	coinLong (8)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\coinLong (8)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (8)		128860
 	575118842	zipperA (1)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\zipperA (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\Zipper\zipperA (1)		91388
 	607650258	theme_keys	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\theme_keys_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_keys		6158028
 	630560050	theme_pizz_high	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\theme_pizz_high_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_pizz_high		6158028
 	698729837	pouring (2)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\pouring (2)_A6AC8335.wem		\Actor-Mixer Hierarchy\Default Work Unit\Pouring\pouring (2)		726684
+	727419285	gibberish (2)_01	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\gibberish (2)_2C4F093A.wem		\Actor-Mixer Hierarchy\Default Work Unit\DialogueRegister\DialogueGibberish\gibberish (2)_01		597372
+	743340238	gibberish (1)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\gibberish (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\DialogueRegister\gibberish (1)		74816
 	764411919	qubodup-DoorClose06	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\qubodup-DoorClose06_3ABC1A10.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpen\qubodup-DoorClose06		130648
 	765882545	coinLong (1)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\coinLong (1)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (1)		229416
 	782395007	Bell	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\bell_9620BEFA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Bell		192352
@@ -36,6 +47,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	854304745	qubodup-DoorClose07	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\qubodup-DoorClose07_3F82123E.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpen\qubodup-DoorClose07		83240
 	880118003	coinLong (5)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\coinLong (5)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\CoinPayVary\CoinLong\coinLong (5)		197664
 	887911261	qubodup-DoorOpen02	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\qubodup-DoorOpen02_0E411943.wem		\Actor-Mixer Hierarchy\Default Work Unit\DoorOpen\qubodup-DoorOpen02		74504
+	921700915	gibberish (3)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\gibberish (3)_9B20ABFC.wem		\Actor-Mixer Hierarchy\Default Work Unit\DialogueRegister\gibberish (3)		79672
 	937805081	theme_cor_ang	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\theme_cor_ang_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Game_Theme\Theme\theme_cor_ang		6158028
 	970509562	zipperA (3)	C:\Users\misun\Desktop\Early Projects\Week159_Jam\weekly-jam-159\weekly-jam-159_WwiseProject\.cache\Mac\SFX\zipperA (3)_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Coin_Pay\Zipper\zipperA (3)		89292
 

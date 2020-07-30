@@ -21,7 +21,7 @@ public class Employee : Person
     }
 
     private void OnMouseDown() {
-        AkSoundEngine.PostEvent("Pouring", gameObject);
+        AkSoundEngine.PostEvent("DialogueRegister", gameObject);
         AkSoundEngine.SetRTPCValue("Theme_RTPC", 40);
     }
 

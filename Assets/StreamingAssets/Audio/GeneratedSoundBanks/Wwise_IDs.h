@@ -15,6 +15,7 @@ namespace AK
     {
         static const AkUniqueID BELL = 1240512178U;
         static const AkUniqueID COINPAY = 1303789868U;
+        static const AkUniqueID DIALOGUEREGISTER = 916136552U;
         static const AkUniqueID DOOROPEN = 1404805401U;
         static const AkUniqueID POURING = 3841775605U;
         static const AkUniqueID THEMEPLAY = 1419635814U;
