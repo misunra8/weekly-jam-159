@@ -20,7 +20,7 @@
 					<IncludedMemoryFiles>
 						<File Id="782395007" Language="SFX">
 							<ShortName>bell.wav</ShortName>
-							<Path>SFX\bell_9620BEFA.wem</Path>
+							<Path>SFX\bell_7D97D9BF.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -84,19 +84,19 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="916136552" Name="DialogueRegister" ObjectPath="\Events\Default Work Unit\DialogueRegister" DurationType="OneShot" DurationMin="3.794595" DurationMax="6.586209">
+				<Event Id="916136552" Name="DialogueRegister" ObjectPath="\Events\Default Work Unit\DialogueRegister" DurationType="OneShot" DurationMin="0.274775" DurationMax="4.092443">
 					<IncludedMemoryFiles>
 						<File Id="29729775" Language="SFX">
 							<ShortName>gibberish (2).wav</ShortName>
-							<Path>SFX\gibberish (2)_EC3E1988.wem</Path>
+							<Path>SFX\gibberish (2)_D1814EF5.wem</Path>
 						</File>
 						<File Id="432928169" Language="SFX">
 							<ShortName>gibberish (2).wav</ShortName>
-							<Path>SFX\gibberish (2)_6E90C1DF.wem</Path>
+							<Path>SFX\gibberish (2)_C8B286BB.wem</Path>
 						</File>
 						<File Id="727419285" Language="SFX">
 							<ShortName>gibberish (2).wav</ShortName>
-							<Path>SFX\gibberish (2)_2C4F093A.wem</Path>
+							<Path>SFX\gibberish (2)_B26D427B.wem</Path>
 						</File>
 						<File Id="743340238" Language="SFX">
 							<ShortName>gibberish (1).wav</ShortName>
@@ -104,7 +104,7 @@
 						</File>
 						<File Id="921700915" Language="SFX">
 							<ShortName>gibberish (3).wav</ShortName>
-							<Path>SFX\gibberish (3)_9B20ABFC.wem</Path>
+							<Path>SFX\gibberish (3)_97C8340F.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

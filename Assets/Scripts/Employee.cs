@@ -26,8 +26,8 @@ public class Employee : Person
 
     private void OnMouseDown()
     {
-        AkSoundEngine.PostEvent("DialogueRegister", gameObject);
-        AkSoundEngine.SetRTPCValue("Theme_RTPC", 40);
+        //AkSoundEngine.PostEvent("DialogueRegister", gameObject);
+        //AkSoundEngine.SetRTPCValue("Theme_RTPC", 40);
     }
 
     /// <summary>
@@ -41,6 +41,7 @@ public class Employee : Person
         if (!machine.IsAvailableForEmployee(cell)) return;
 
         // triggers behavior states
+        AkSoundEngine.PostEvent("DialogueRegister", gameObject);
         behavior.SetTrigger("Operate cash register");
 
         // interact with the machine

@@ -70,7 +70,7 @@ public abstract class Person : MonoBehaviour
     {
         if (pairedEmpty == null) return;
         var distance = Vector2.Distance(this.transform.position, pairedEmpty.transform.position);
-        if (distance < 0.5f) {
+        if (distance < 1.0f) {
             StoppedMoving();
         }
     

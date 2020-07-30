@@ -74,7 +74,7 @@
 						<Action Name="" ID="{8971C97E-391A-4605-ACE4-D9B0DBC4AB73}" ShortID="318864226">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="DialogueRegister" ID="{3B00F26A-690A-4EE9-A1F2-71BD08C9AD1C}" WorkUnitID="{638493B3-4342-4AA6-A351-A5A3D2BE5F90}"/>
+									<ObjectRef Name="DialogueGibberish" ID="{EA38C831-5CEB-400C-A9D1-87B22F354B4B}" WorkUnitID="{638493B3-4342-4AA6-A351-A5A3D2BE5F90}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
